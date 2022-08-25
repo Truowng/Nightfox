@@ -10,12 +10,29 @@
   pointer-events: none;
   transition: width 0.5s, height 0.5s;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .inner-cursor.grow {
   width: 3.5rem;
   height: 3.5rem;
   transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.drag {
+  width: 13rem;
+  height: 13rem;
+  transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor p {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  mix-blend-mode: difference;
+  animation: fadeIn ease 1s;
 }
 
 .outer-cursor {
@@ -29,4 +46,12 @@
   border-radius: 50%;
   pointer-events: none;
   z-index: 10;
+  transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor.drag {
+  width: 13rem;
+  height: 13rem;
+  transition: width 0.5s, height 0.5s;
+  border-color: transparent;
 }
