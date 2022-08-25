@@ -1,0 +1,111 @@
+@font-face {
+  font-family: Roundhandbt;
+  src: url("../fonts/Roundhand/Roundhand\ BT.ttf");
+}
+
+@font-face {
+  font-family: DrunkWide;
+  src: url("../fonts/Druk-Wide-Bold.ttf/Druk\ Wide\ Bold.ttf");
+}
+
+.bestseller-container {
+  position: relative;
+  width: 100%;
+  height: 300rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bestseller-infomation-container {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  flex: 1;
+  height: 100vh;
+}
+
+.bestseller-infomation-text {
+  font-size: 4vw;
+  font-family: DrunkWide;
+  font-weight: bold;
+}
+
+.bestseller-infomation-text:last-of-type {
+  margin-top: -6rem;
+}
+
+.bestseller-infomation-text:first-child span {
+  margin-left: 2vw;
+}
+
+.bestseller-infomation-text span {
+  font-family: Roundhandbt;
+  font-size: 9vw;
+  margin-left: 2.5rem;
+  font-weight: 300;
+}
+
+.bestseller-link {
+  margin-top: 3rem;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: #fff;
+  padding: 0 2rem;
+  line-height: 3vw;
+  background-color: #000;
+  display: block;
+  transition: all ease 0.2s;
+  border: 0.1rem solid transparent;
+  margin-right: 10%;
+  font-family: "DrunkWide";
+}
+
+.bestseller-link:hover {
+  background-color: #fff;
+  color: #000;
+  border: 0.1rem solid #000;
+}
+
+.bestseller-image-container {
+  flex: 1.25;
+  position: relative;
+}
+
+.bestseller-image-item {
+  width: 80%;
+  position: absolute;
+}
+
+.bestseller-image-item:nth-child(2) {
+  width: 46%;
+  top: 9.4%;
+  right: 10%;
+  mix-blend-mode: darken;
+}
+
+.bestseller-image-item:nth-child(3) {
+  width: 46%;
+  top: 38.4%;
+  left: 10%;
+  z-index: 1;
+  mix-blend-mode: darken;
+}
+
+.bestseller-image-item:nth-child(4) {
+  width: 46%;
+  top: 45.2%;
+  right: 10%;
+}
+.bestseller-image-item:nth-child(5) {
+  width: 73%;
+  bottom: 0;
+  z-index: 1;
+}
+.bestseller-image-item:nth-child(6) {
+  width: 46%;
+  bottom: 2.8%;
+  right: 10%;
+}

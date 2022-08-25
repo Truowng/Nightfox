@@ -1,0 +1,69 @@
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  transition: all ease 1s;
+  position: relative;
+}
+
+.banner-text {
+  font-size: 23vw;
+  margin-left: 10rem;
+  transition: all ease 1s;
+  position: absolute;
+  z-index: 3;
+  left: 34%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  color: black;
+  /* text-shadow: 5rem -3rem rgba(255, 255, 255, 0.4); */
+}
+
+.banner-text:nth-child(1) {
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+.banner-text:nth-child(2) {
+  top: 62%;
+  left: 60%;
+  color: #dd4302;
+  z-index: 2;
+  text-shadow: 5rem 3rem rgba(0, 0, 0, 0.1);
+  /* font-family: Roundhandbt; */
+}
+
+.banner-slideshow-container {
+  display: flex;
+  min-width: 50rem;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner-slideshow-container:nth-child(3) {
+  bottom: 0;
+  z-index: 2;
+  left: -40%;
+}
+
+.banner-slideshow-item-container {
+  justify-content: space-around;
+  display: flex;
+  animation: slideShow linear 25s infinite;
+  align-items: center;
+}
+
+.banner-slideshow-item {
+  margin: 0 10rem;
+  width: 14vw;
+}
+
+.banner-slideshow-item:nth-child(2n + 1) {
+  align-self: flex-end;
+}
+
+.banner-slideshow-item:nth-child(2n) {
+  align-self: flex-start;
+}

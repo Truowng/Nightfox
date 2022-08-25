@@ -1,0 +1,75 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  display: none;
+  z-index: 8;
+  animation: fadeIn ease 0.5s;
+  opacity: 1;
+  transition: all ease 0.2s, background-color ease 0.5s;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #fff;
+  font-size: 8rem;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  font-family: DrunkWide;
+  z-index: 2;
+  mix-blend-mode: difference;
+}
+
+.menu-item:nth-of-type(1) {
+  top: 20%;
+  left: 2%;
+  animation: slideRight ease 0.5s;
+}
+.menu-item:nth-of-type(2) {
+  bottom: 20%;
+  left: 2%;
+  animation: slideRight ease 0.5s;
+}
+.menu-item:nth-of-type(3) {
+  top: 40%;
+  right: 2%;
+  animation: slideLeft ease 0.5s;
+}
+.menu-item:nth-of-type(4) {
+  bottom: 3%;
+  right: 2%;
+  animation: slideLeft ease 0.5s;
+}
+
+.menu-item-image {
+  position: absolute;
+  width: 27vw;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) scale(0.9);
+  opacity: 0;
+  transition: all ease 0.5s;
+  cursor: default;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
