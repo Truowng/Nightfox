@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("//db.onlinewebfonts.com/c/1c87f20c55baa7eccc98b8603b5eecea?family=Grifinito+L");
+
+@font-face {
+  font-family: Roundhandbt;
+  src: url("../fonts/Roundhand/Roundhand\ BT.ttf");
+}
+
+@font-face {
+  font-family: DrunkWide;
+  src: url("../fonts/Druk-Wide-Bold.ttf/Druk\ Wide\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "Grifinito L";
+  src: url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.eot");
+  src: url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.svg#Grifinito L")
+      format("svg");
+}
 
 * {
   margin: 0;

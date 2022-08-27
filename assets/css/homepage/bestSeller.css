@@ -1,13 +1,3 @@
-@font-face {
-  font-family: Roundhandbt;
-  src: url("../fonts/Roundhand/Roundhand\ BT.ttf");
-}
-
-@font-face {
-  font-family: DrunkWide;
-  src: url("../fonts/Druk-Wide-Bold.ttf/Druk\ Wide\ Bold.ttf");
-}
-
 .bestseller-container {
   position: relative;
   width: 100%;

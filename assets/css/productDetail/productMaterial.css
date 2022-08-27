@@ -1,0 +1,42 @@
+.product-detail-material-container {
+  min-width: 100vw;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-detail-material {
+  font-size: 8vw;
+  font-family: "Grifinito L";
+  text-align: right;
+}
+.product-detail-material-image-container {
+  display: flex;
+  justify-content: space-around;
+}
+.product-detail-material-image {
+  background-image: url("https://product.hstatic.net/200000491703/product/ann03381_96a659d0c84f41e0991bf2461a4b0bcf_master.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60vw;
+  height: 70vh;
+  margin-top: 10rem;
+  transform: rotate(8deg);
+  animation: shake ease-in-out 3s infinite alternate;
+}
+.product-detail-material-image-text {
+  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 48vw;
+  font-weight: bold;
+}
+
+.product-detail-material-image-text span {
+  font-size: 1.5vw;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-weight: normal;
+}

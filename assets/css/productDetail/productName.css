@@ -1,0 +1,24 @@
+.product-detail-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 90vw;
+  padding: 5rem 5rem 5rem 0;
+  margin-right: 5rem;
+}
+
+.product-detail-name {
+  font-size: 8vw;
+  font-family: "Grifinito L";
+  padding: 0 5rem;
+}
+
+.product-detail-name-image {
+  background-image: url("https://product.hstatic.net/200000491703/product/ann03386_2731a7b4e95b4409af6b3d9c17724e5d_master.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 86vh;
+  min-width: 60%;
+}
