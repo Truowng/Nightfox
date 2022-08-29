@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 @import url("//db.onlinewebfonts.com/c/1c87f20c55baa7eccc98b8603b5eecea?family=Grifinito+L");
+@import url("https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap");
+
+@font-face {
+  font-family: Oswald;
+  src: url("../fonts/Oswald/Oswald-Medium.ttf");
+}
 
 @font-face {
   font-family: Roundhandbt;
@@ -33,7 +39,7 @@
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Playfair Display", serif;
-  cursor: none !important;
+  /* cursor: none !important; */
 }
 
 body {
