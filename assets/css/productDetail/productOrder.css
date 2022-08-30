@@ -11,7 +11,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 50vw;
+  width: 58vw;
   height: 90vh;
   margin-right: 4vw;
   transition: all ease 0.3s;
@@ -59,8 +59,9 @@
 }
 
 .product-detail-order-infomation-name {
-  font-size: 2vw;
+  font-size: 2.5vw;
   margin-bottom: 2rem;
+  max-width: 27vw;
 }
 
 .product-detail-order-infomation-price-container {
@@ -97,17 +98,23 @@
 .product-detail-order-infomation-color-container {
   display: flex;
   height: 4rem;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .product-detail-order-infomation-color {
   background-color: transparent;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.8vw;
+  height: 1.8vw;
   border-radius: 5rem;
   position: relative;
   margin-left: 1rem;
   border: 0.1rem solid #000;
   cursor: pointer;
+}
+
+.product-detail-order-infomation-color:first-child {
+  margin-left: unset;
 }
 
 .product-detail-order-infomation-size-container {
@@ -125,17 +132,75 @@
 }
 
 .product-detail-order-infomation-size-checkbox {
-  background-color: #000;
   display: none;
 }
+
 .product-detail-order-infomation-size-label {
   font-size: 1.2vw;
   display: block;
   width: 100%;
+  padding: 1rem 0;
   text-align: center;
+  transition: all ease 0.3s;
+}
+
+.product-detail-order-infomation-size-checkbox:checked
+  ~ .product-detail-order-infomation-size-label {
+  background-color: #000;
+  color: #fff;
 }
 
 .product-detail-order-infomation-size-label
   ~ .product-detail-order-infomation-size-checkbox:checked {
   background-color: #000;
+}
+
+.product-detail-order-infomation-buy-container {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 0.1rem solid #ccc;
+}
+
+.product-detail-order-infomation-buy-basket,
+.product-detail-order-infomation-buy {
+  font-size: 1.5vw;
+  padding: 2rem 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: Oswald;
+  transition: all ease 0.3s;
+}
+.product-detail-order-infomation-buy-basket {
+  border: 0.1rem solid #000;
+  color: #000;
+}
+
+.product-detail-order-infomation-buy-basket:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.product-detail-order-infomation-buy {
+  background-color: #000;
+  color: #fff;
+  border: 0.1rem solid transparent;
+  margin-top: 1.2rem;
+}
+
+.product-detail-order-infomation-buy:hover {
+  border: 0.1rem solid #dd4302;
+  background-color: #dd4302;
+  color: #fff;
+}
+
+.product-detail-order-infomation-buy-basket i {
+  font-size: 1.3vw;
+  margin: 0.5rem 0 0 0.4rem;
+  transition: transform ease 0.3s;
+}
+.product-detail-order-infomation-buy-basket:hover i {
+  transform: translateX(0.8rem);
 }

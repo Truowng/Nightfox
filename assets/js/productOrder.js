@@ -7,15 +7,8 @@ const ImageContainer = document.querySelector(
 );
 
 const radioBtns = document.querySelectorAll(
-  ".product-detail-order-infomation-size-checkbox-container"
+  ".product-detail-order-infomation-size-label"
 );
-
-radioBtns.forEach((radioBtn) => {
-  radioBtn.addEventListener("click", () => {
-    radioBtn.style.backgroundColor = "#000";
-    radioBtn.style.color = "#fff";
-  });
-});
 
 const colorsList = ["#fff", "#000"];
 
