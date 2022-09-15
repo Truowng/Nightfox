@@ -53,3 +53,5 @@ document
       ImageContainer.style.backgroundImage = `url("${imagesList[count]}")`;
     }
   });
+
+

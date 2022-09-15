@@ -34,12 +34,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100%;
 }
 
 .product-carousel-item {
-  height: 30vw;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;

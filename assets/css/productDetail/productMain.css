@@ -10,11 +10,11 @@
 /* CSS */
 
 .product-detail-container {
+  position: fixed;
+  position: -webkit-sticky;
+  top: 0;
   min-width: 100%;
-  height: 100vh;
   display: flex;
-  overflow: hidden;
-  transition: all ease 0.3s;
 }
 
 .product-detail-separate-container {

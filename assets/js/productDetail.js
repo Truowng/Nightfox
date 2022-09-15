@@ -2,50 +2,40 @@ const container = document.querySelector(".product-detail-container");
 const separates = document.querySelectorAll(
   ".product-detail-separate-container"
 );
+let productDetailWidth;
+let productDetailCurrent = 0;
+let productDetailTarget = 0;
+let productDetailEase = 0.05;
 
-container.addEventListener("wheel", (e) => {
-  const scroll = [
-    `translateY(${-((container.scrollLeft += e.deltaY) / 35)}%)`,
-    `translateY(${-200 + (container.scrollLeft += e.deltaY) / 35}%)`,
-  ];
+const lerp = (start, end, t) => {
+  return start * (1 - t) + end * t;
+};
 
-  e.preventDefault();
+const setTransform = (el, transform) => {
+  el.style.transform = transform;
+};
 
-  separates.forEach((separate, index) => {
-    separate.style.transform = scroll[index];
+const init = () => {
+  productDetailWidth = container.getBoundingClientRect().width;
+  document.querySelector(".content-container").style.height = `${
+    productDetailWidth - (window.innerWidth - window.innerHeight)
+  }px`;
+};
+
+window.addEventListener("resize", init);
+
+const productDetailAnimate = () => {
+  productDetailCurrent = parseFloat(
+    lerp(productDetailCurrent, productDetailTarget, productDetailEase)
+  ).toFixed(2);
+  console.log(productDetailTarget);
+  productDetailTarget = window.scrollY;
+  setTransform(container, `translateX(-${productDetailCurrent}px)`);
+  separates.forEach((separate) => {
+    setTransform(separate, `translateY(-${productDetailCurrent / 5}px)`);
   });
+  requestAnimationFrame(productDetailAnimate);
+};
 
-  // document.querySelector(
-  //   ".product-detail-name"
-  // ).style.transform = `translateY(${(container.scrollLeft += e.deltaY) / 10}%)`;
-
-  // document.querySelector(
-  //   ".product-detail-material-image-text span"
-  // ).style.transform = `translateX(${
-  //   25 - (container.scrollLeft += e.deltaY) / 150
-  // }%)`;
-
-  // document.querySelector(
-  //   ".product-detail-material-image-text"
-  // ).style.transform = `translateX(${
-  //   25 - (container.scrollLeft += e.deltaY) / 120
-  // }%)`;
-
-  // document.querySelector(
-  //   ".product-detail-description-content-text"
-  // ).style.transform = `translateX(${
-  //   20 - (container.scrollLeft += e.deltaY) / 55
-  // }%)`;
-
-  // document.querySelector(
-  //   ".product-detail-description-title"
-  // ).style.transform = `translateX(${
-  //   -(container.scrollLeft += e.deltaY) / 150
-  // }%)`;
-
-  // document.querySelector(
-  //   ".product-detail-material"
-  // ).style.transform = `translateX(${
-  //   50 - (container.scrollLeft += e.deltaY) / 60
-  // }%)`;
-});
+init();
+productDetailAnimate();

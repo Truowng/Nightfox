@@ -15,8 +15,13 @@
 }
 
 .contact-image-container {
-  padding: 3rem;
   flex: 1;
+  background-image: url(../../img/dropdown.HEIC);
+  background-size: cover;
+  background-position: center -200px;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin: 3rem;
 }
 
 .contact-image-item {
