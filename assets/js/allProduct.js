@@ -35,7 +35,7 @@ const productInfomations = [
   },
 ];
 
-const products = productInfomations.map((productInfomation) => {
+const allProducts = productInfomations.map((productInfomation) => {
   return `<div
   class="all-product-section-image-item-container col-lg-3 col-md-6 col-sm-12"
  >
@@ -48,4 +48,4 @@ const products = productInfomations.map((productInfomation) => {
   </div>
  </div>`;
 });
-productSectionContainer.innerHTML = products.join("");
+productSectionContainer.innerHTML = allProducts.join("");
