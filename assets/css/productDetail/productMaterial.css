@@ -22,8 +22,8 @@
   width: 60vw;
   height: 70vh;
   margin-top: 10rem;
-  transform: rotate(8deg);
-  animation: shake ease-in-out 3s infinite alternate;
+  /* transform: rotate(8deg);  */
+  /* animation: shake ease-in-out 3s infinite alternate; */
 }
 .product-detail-material-image-text {
   font-size: 3vw;

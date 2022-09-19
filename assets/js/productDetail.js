@@ -21,6 +21,7 @@ const init = () => {
     productDetailWidth - (window.innerWidth - window.innerHeight)
   }px`;
 };
+init();
 
 window.addEventListener("resize", init);
 
@@ -37,5 +38,4 @@ const productDetailAnimate = () => {
   requestAnimationFrame(productDetailAnimate);
 };
 
-init();
 productDetailAnimate();
