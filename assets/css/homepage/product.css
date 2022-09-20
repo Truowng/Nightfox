@@ -35,6 +35,7 @@
   justify-content: flex-start;
   align-items: center;
   /* overflow-x: hidden; */
+  /* flex-wrap: wrap; */
   width: 100%;
 }
 

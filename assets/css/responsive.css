@@ -1,0 +1,27 @@
+/* mobile & table */
+
+@media (max-width: 1023px) {
+  /* Homepage  */
+  .bestseller-container {
+    flex-direction: column;
+  }
+
+  .bestseller-infomation-container {
+    flex: 0;
+    position: unset;
+    margin-bottom: 5rem;
+  }
+  .bestseller-link {
+    margin-right: 0;
+  }
+}
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* PC  */
+
+@media (min-width: 1024px) {
+}

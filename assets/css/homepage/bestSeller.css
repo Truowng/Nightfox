@@ -1,7 +1,7 @@
 .bestseller-container {
   position: relative;
   width: 100%;
-  height: 300rem;
+  /* height: 300rem; */
   display: flex;
   justify-content: space-between;
 }
@@ -61,12 +61,18 @@
 
 .bestseller-image-container {
   flex: 1.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bestseller-image-wrapper {
   position: relative;
 }
 
 .bestseller-image-item {
-  width: 80%;
-  position: absolute;
+  width: 50%;
+  /* position: absolute; */
 }
 
 .bestseller-image-item:nth-child(2) {
