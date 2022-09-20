@@ -66,6 +66,18 @@
     margin-bottom: 3%;
   }
 
+  .contact-infomation-description {
+    font-size: 2vw;
+  }
+
+  .contact-infomation-input-item {
+    font-size: 2vw;
+  }
+
+  .contact-infomation-input-item::placeholder {
+    font-size: 2vw;
+  }
+
   .contact-infomation-btn {
     font-size: 2.5vw;
     height: 8vw;
