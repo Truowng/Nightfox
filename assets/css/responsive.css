@@ -45,10 +45,10 @@
 
   .contact-infomation-heading {
     text-align: center;
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .contact-infomation-heading span {
-    font-size: 18vw;
+    font-size: 17vw;
   }
 
   .contact-infomation-container {
@@ -81,6 +81,21 @@
   .contact-infomation-btn {
     font-size: 2.5vw;
     height: 8vw;
+  }
+}
+
+/* mobile  */
+
+@media (max-width: 600px) {
+  .contact-infomation-description {
+    font-size: 3vw;
+    text-align: center;
+  }
+  .contact-infomation-heading {
+    font-size: 5vw;
+  }
+  .contact-infomation-heading span {
+    font-size: 12vw;
   }
 }
 
