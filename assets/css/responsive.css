@@ -131,6 +131,11 @@
 
   .social-privacy-link {
     text-align: center;
+    font-size: 3vw;
+  }
+
+  .social-link-item {
+    font-size: 3vw;
   }
 
   .social-link-item-icon {
@@ -147,6 +152,7 @@
 
   .social-infomation-text {
     text-align: center;
+    font-size: 3vw;
   }
 }
 
@@ -158,10 +164,10 @@
     text-align: center;
   }
   .contact-infomation-heading {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   .contact-infomation-heading span {
-    font-size: 12vw;
+    font-size: 17vw;
   }
 }
 
