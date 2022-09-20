@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.follow-us-image-wrapper {
+  display: flex;
+}
+
 .follow-us-image-container {
   /* background-color: green; */
   width: 18vw;
@@ -22,7 +26,7 @@
 }
 
 .follow-us-text {
-  font-size: 10rem;
+  font-size: 6vw;
   font-family: Roundhandbt;
   color: #fff;
   mix-blend-mode: difference;
@@ -37,7 +41,7 @@
 
 .social-logo-text,
 .social-logo-text span {
-  font-size: 6.5rem;
+  font-size: 5vw;
   letter-spacing: 0.5rem;
   margin-top: -2rem;
   font-weight: bold;

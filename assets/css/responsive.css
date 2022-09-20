@@ -33,6 +33,10 @@
 
   /* Contact Section  */
 
+  .contact-container {
+    padding: 1rem;
+  }
+
   .contact-wrapper {
     flex-direction: column;
   }
@@ -81,6 +85,68 @@
   .contact-infomation-btn {
     font-size: 2.5vw;
     height: 8vw;
+  }
+
+  /* Footer  */
+
+  .follow-us-container {
+    position: relative;
+  }
+
+  .follow-us-image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .follow-us-image-container {
+    flex: 1 0 35%;
+    width: 25vw;
+    height: 40vw;
+  }
+
+  .follow-us-text {
+    position: absolute;
+    top: 48%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+  }
+
+  .social-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .social-logo-text,
+  .social-logo-text span {
+    margin-right: 0;
+    font-size: 8vw;
+  }
+
+  .social-link-container {
+    margin-right: 0;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .social-privacy-link {
+    text-align: center;
+  }
+
+  .social-link-item-icon {
+    margin-left: 0;
+  }
+
+  .social-privacy-container {
+    margin: 3rem 0;
+  }
+
+  .social-infomation-container {
+    align-items: center;
+  }
+
+  .social-infomation-text {
+    text-align: center;
   }
 }
 
