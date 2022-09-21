@@ -47,6 +47,10 @@ body {
   background-color: #fff;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 @keyframes slideRight {
   0% {
     transform: translateX(-10%);
