@@ -237,6 +237,12 @@
     top: 53%;
   }
 
+  /* Carousel  */
+
+  .product-container {
+    margin: 20rem 0 5rem;
+  }
+
   /* Contact  */
   .contact-infomation-description {
     font-size: 3vw;

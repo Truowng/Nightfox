@@ -57,10 +57,9 @@ const setTransform = (el, transform) => {
 
 const init = () => {
   productCarouselWidth = productCarouselContainer.getBoundingClientRect().width;
-  document.querySelector(".product-container").style.height = `${
-    productCarouselWidth - (window.innerWidth - window.innerHeight) * 10
-  }px`;
-  console.log(document.querySelector(".product-container").style.height);
+  // document.querySelector(".product-container").style.height = `${
+  //   productCarouselWidth - (window.innerWidth - window.innerHeight) * 10
+  // }px`;
 };
 
 window.addEventListener("resize", init);
