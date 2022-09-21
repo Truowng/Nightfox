@@ -1,6 +1,17 @@
 /* mobile & table */
 
 @media (max-width: 1023px) {
+  /* Cursor  */
+
+  .inner-cursor,
+  .inner-cursor.grow,
+  .inner-cursor.drag,
+  .inner-cursor p,
+  .outer-cursor,
+  .outer-cursor.drag {
+    display: none;
+  }
+
   /* Homepage  */
 
   /* Banner  */
