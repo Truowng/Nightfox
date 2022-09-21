@@ -2,6 +2,40 @@
 
 @media (max-width: 1023px) {
   /* Homepage  */
+
+  /* Banner  */
+
+  .banner-container {
+    height: 100vh;
+  }
+
+  .banner-text {
+    font-size: 30vw;
+    margin-left: 0;
+    left: 50%;
+  }
+
+  .banner-text:nth-child(2) {
+    left: 50%;
+    top: 58%;
+  }
+
+  .banner-slideshow-container {
+    height: 50%;
+  }
+
+  .banner-slideshow-item-container {
+    height: 100%;
+  }
+  .banner-slideshow-item:nth-child(2n) {
+    width: 50vw;
+  }
+
+  .banner-slideshow-item:nth-child(2n + 1) {
+    width: 35vw;
+  }
+
+  /* Best seller  */
   .bestseller-container {
     flex-direction: column;
   }
@@ -11,6 +45,7 @@
     position: unset;
     margin-bottom: 5rem;
   }
+
   .bestseller-link {
     margin-right: 0;
     font-size: 4vw;
@@ -169,6 +204,24 @@
 /* mobile  */
 
 @media (max-width: 600px) {
+  /* Homepage  */
+  /* Banner  */
+  .banner-slideshow-item:nth-child(2n) {
+    width: 70vw;
+  }
+
+  .banner-slideshow-item:nth-child(2n + 1) {
+    width: 45vw;
+  }
+
+  .banner-text {
+    font-size: 38vw;
+  }
+
+  .banner-text:nth-child(2) {
+    top: 53%;
+  }
+
   /* Contact  */
   .contact-infomation-description {
     font-size: 3vw;

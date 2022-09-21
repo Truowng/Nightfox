@@ -16,12 +16,12 @@
 }
 
 .product-heading {
-  font-size: 10rem;
+  font-size: 7vw;
   position: absolute;
   z-index: -1;
   text-align: center;
   line-height: 20rem;
-  letter-spacing: 5rem;
+  letter-spacing: 5vw;
 }
 
 .product-carousel-item-text {
