@@ -38,37 +38,71 @@
 //   document.querySelector(".product-carousel-container")
 // ).style.width;
 
-const productCarouselContainerWidth =
-  document.querySelector(".product-carousel-container").getBoundingClientRect()
-    .width + 250;
+const productCarouselContainer = document.querySelector(
+  ".product-carousel-container"
+);
+const productCarouselItem = document.querySelector(".product-carousel-item");
+let productCarouselWidth;
+let productCurrent = 0;
+let productTarget = 0;
+let productEase = 0.05;
 
-const scroll = {
-  values: [
-    {
-      x: -productCarouselContainerWidth,
-    },
-  ],
+const lerp = (start, end, t) => {
+  return start * (1 - t) + end * t;
 };
 
-console.log(productCarouselContainerWidth);
+const setTransform = (el, transform) => {
+  el.style.transform = transform;
+};
 
-const tween = new TimelineLite();
+const init = () => {
+  productCarouselWidth = productCarouselContainer.getBoundingClientRect().width;
+  document.querySelector(".product-container").style.height = `${
+    productCarouselWidth - (window.innerWidth - window.innerHeight) * 10
+  }px`;
+  console.log(document.querySelector(".product-container").style.height);
+};
 
-tween.add(
-  TweenLite.to(".product-carousel-container", 1, {
-    bezier: scroll,
-    ease: Power1.easeInOut,
-  })
-);
+window.addEventListener("resize", init);
 
-const controller = new ScrollMagic.Controller();
+const productCarouselAnimate = () => {
+  productCurrent = parseFloat(
+    lerp(productCurrent, productTarget, productEase)
+  ).toFixed(2);
+  productTarget = window.scrollY;
+  setTransform(productCarouselContainer, `translateX(-${productCurrent}px)`);
+  requestAnimationFrame(productCarouselAnimate);
+};
 
-const scence = new ScrollMagic.Scene({
-  triggerElement: ".product-carousel-container",
-  duration: 2000,
-  triggerHook: 0.1,
-})
-  .setTween(tween)
-  .addIndicators()
-  .setPin(".product-carousel-container")
-  .addTo(controller);
+productCarouselAnimate();
+
+// const scroll = {
+//   values: [
+//     {
+//       x: -productCarouselContainerWidth,
+//     },
+//   ],
+// };
+
+// console.log(productCarouselContainerWidth);
+
+// const tween = new TimelineLite();
+
+// tween.add(
+//   TweenLite.to(".product-carousel-container", 1, {
+//     bezier: scroll,
+//     ease: Power1.easeInOut,
+//   })
+// );
+
+// const controller = new ScrollMagic.Controller();
+
+// const scence = new ScrollMagic.Scene({
+//   triggerElement: ".product-carousel-container",
+//   duration: 2000,
+//   triggerHook: 0.1,
+// })
+//   .setTween(tween)
+//   .addIndicators()
+//   .setPin(".product-carousel-container")
+//   .addTo(controller);

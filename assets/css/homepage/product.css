@@ -11,8 +11,9 @@
 .product-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 10rem 0;
+  /* height: 2000px; */
 }
 
 .product-heading {
@@ -34,19 +35,18 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* overflow-x: hidden; */
-  /* flex-wrap: wrap; */
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .product-carousel-item {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10rem;
   color: rgba(255, 255, 255, 0.3);
-  min-width: 20%;
+  min-width: 400px;
   background-image: url(https://images.unsplash.com/photo-1596902852858-126144389ee2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
   margin: 0 4rem;
   background-size: cover;
