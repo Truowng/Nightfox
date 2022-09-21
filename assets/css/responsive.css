@@ -12,6 +12,10 @@
     display: none;
   }
 
+  .wrapper {
+    overflow-x: hidden;
+  }
+
   /* Homepage  */
 
   /* Banner  */
