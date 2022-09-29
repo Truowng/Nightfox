@@ -5,7 +5,7 @@ const separates = document.querySelectorAll(
 let productDetailWidth;
 let productDetailCurrent = 0;
 let productDetailTarget = 0;
-let productDetailEase = 0.05;
+let productDetailEase = 0.07;
 
 const lerp = (start, end, t) => {
   return start * (1 - t) + end * t;

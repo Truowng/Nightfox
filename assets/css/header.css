@@ -1,6 +1,6 @@
 .header-btn {
-  width: 5rem;
-  height: 5rem;
+  width: 3vw;
+  height: 3vw;
   border-radius: 5rem;
   background-color: #fff;
   color: #000;
@@ -9,8 +9,8 @@
   align-items: center;
   cursor: pointer;
   position: fixed;
-  right: 3rem;
-  top: 3rem;
+  right: 5rem;
+  top: 4rem;
   transition: all ease 0.4s;
   z-index: 9;
   mix-blend-mode: difference;
@@ -30,8 +30,8 @@
 
 .logo-image {
   position: fixed;
-  top: 2rem;
+  top: 0;
   left: 3rem;
-  width: 5.5rem;
+  width: 7vw;
   z-index: 9;
 }

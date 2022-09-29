@@ -20,6 +20,7 @@ let labels = Array.from(document.querySelectorAll("label"));
 links.forEach((link) => {
   link.addEventListener("mouseover", () => {
     innerCursor.classList.add("grow");
+    outerCursor.classList.add(".spin");
   });
   link.addEventListener("mouseleave", () => {
     innerCursor.classList.remove("grow");
@@ -52,25 +53,3 @@ labels.forEach((label) => {
     innerCursor.classList.remove("grow");
   });
 });
-
-document.querySelector(".header-btn").addEventListener("mouseover", () => {
-  innerCursor.classList.add("grow");
-});
-document.querySelector(".header-btn").addEventListener("mouseleave", () => {
-  innerCursor.classList.remove("grow");
-});
-
-// document
-//   .querySelector(".product-carousel-container")
-//   .addEventListener("mouseover", () => {
-//     innerCursor.innerHTML = "<p>Drag</p>";
-//     innerCursor.classList.add("drag");
-//     outerCursor.classList.add("drag");
-//   });
-// document
-//   .querySelector(".product-carousel-container")
-//   .addEventListener("mouseleave", () => {
-//     innerCursor.innerHTML = "";
-//     outerCursor.classList.remove("drag");
-//     innerCursor.classList.remove("drag");
-//   });

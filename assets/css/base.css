@@ -33,6 +33,37 @@
       format("svg");
 }
 
+@font-face {
+  font-family: IvyMode;
+  src: url(../fonts/IvyMode/IvyMode-WOFF/IvyMode-Thin.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: PPEiko;
+  src: url(../fonts/PPEiko/ppeiko-thin.otf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: Founders Grotesk;
+  src: url(../fonts/Founders_Grotesk/Founders_Grotesk/FoundersGrotesk-Light.otf);
+  font-weight: 300;
+  letter-spacing: 0.1vw;
+}
+
+@font-face {
+  font-family: Ortica;
+  src: url(../fonts/Ortica/desktop/Ortica-Light.otf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir_Next_Pro_Full/Avenir_Next_Pro_Full/AvenirNextLTPro-Regular.otf);
+}
+
+:root {
+  --pri-color: #dd4302;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +76,16 @@ body {
   font-size: 1.4rem;
   overflow-x: hidden;
   background-color: #fff;
+  scroll-behavior: smooth;
+  overscroll-behavior: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 @keyframes slideRight {
@@ -82,10 +123,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #dd4302;
+  background-color: rgb(221, 67, 2);
 }
 
-.--active {
-  /* border: 0.1rem solid #dd4302 !important; */
-  border: 0.1rem solid #000 !important;
+.active {
+  transform: translate(0, 0) skew(0deg, 8deg) !important;
+}
+.active::before,
+.active::after {
+  display: none;
 }

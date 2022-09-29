@@ -55,7 +55,10 @@
 }
 
 .contact-infomation-description {
-  font-size: 1.8rem;
+  margin-top: 5%;
+  font-size: 1vw;
+  font-family: Founders Grotesk;
+  letter-spacing: 0.1vw;
 }
 
 .contact-infomation-input-container {
@@ -66,12 +69,15 @@
 
 .contact-infomation-input-item {
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1vw;
   outline: none;
   border: 1px solid transparent;
   border-bottom-color: #aaa;
   font-weight: bold;
   padding: 0.3rem 0;
+  font-family: "Founders Grotesk";
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
 }
 
 .contact-infomation-input-item:first-child {
