@@ -51,18 +51,18 @@
 }
 
 .all-product-section-list-item::after {
-  top: 6%;
+  top: 6.6%;
   left: -5%;
   height: 104%;
-  width: 5%;
-  transform: skew(0, -36deg);
+  width: 4.7%;
+  transform: skew(0, -46deg);
 }
 .all-product-section-list-item::before {
   bottom: -20%;
   left: -2.58%;
   height: 20%;
   width: 101%;
-  transform: skew(-56deg, 0deg);
+  transform: skew(-45deg, 0deg);
 }
 
 .all-product-section-list-item:hover {
@@ -79,9 +79,8 @@
   color: #000;
   display: block;
   text-transform: uppercase;
-  font-family: Founders Grotesk;
-  letter-spacing: 0.1vw;
-  padding-top: 0.5vw;
+  font-family: Oswald;
+  padding: 0.5vw 0;
   position: relative;
   z-index: 1;
   background-color: #fff;
@@ -95,21 +94,22 @@
   /* transform: skew(0, 8deg); */
 }
 
+.all-product-section-image-item-container:hover {
+  background: white;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 40px rgba(221, 67, 2, 35%);
+  /* border: 0.1rem dotted var(--pri-color); */
+  /* background-color: var(--pri-color); */
+  transform: translate(0, -0.5vw);
+}
+
 .all-product-section-image {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 25vw;
   transition: all ease 0.15s;
-}
-
-.all-product-section-image-item-container:hover {
-  background: white;
-  position: relative;
-  z-index: 2;
-  /* box-shadow: 0 0 40px rgba(221, 67, 2, 30%); */
-  /* border: 0.1rem solid var(--pri-color); */
-  transform: translate(0, -2vw);
 }
 
 .all-product-section-info-container {
@@ -121,15 +121,14 @@
 .all-product-section-info-name {
   font-size: 1vw;
   margin-bottom: 0;
-  font-family: Founders Grotesk;
-  letter-spacing: 0.1vw;
+  font-family: Oswald;
   text-transform: uppercase;
   color: #000;
+  margin-bottom: 1%;
 }
 
 .all-product-section-info-price {
   font-size: 1vw;
-  font-family: Founders Grotesk;
-  letter-spacing: 0.1vw;
-  color: #000;
+  font-family: "Oswald";
+  color: var(--pri-color);
 }

@@ -4,6 +4,7 @@
 @import url(./header.css);
 @import url(./modal.css);
 @import url(./responsive.css);
+@import url(./preloader.css);
 
 @import url(./homepage/banner.css);
 @import url(./homepage/bestSeller.css);

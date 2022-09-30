@@ -1,0 +1,85 @@
+@font-face {
+  font-family: test;
+  src: url(../fonts/TestFont/Fujita\ Ray.ttf);
+}
+
+.preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 3.5s changeBackground cubic-bezier(0.77, 0, 0.175, 1),
+    setTransform 0.75s cubic-bezier(0.77, 0, 0.175, 1) 3.5s;
+  animation-fill-mode: forwards;
+}
+
+.preloader-image {
+  width: 100%;
+  animation: 3.5s setWidth cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.preloader-text {
+  font-family: test;
+  text-transform: uppercase;
+  font-size: 15vw;
+  color: transparent;
+  -webkit-text-stroke: 0.2rem var(--pri-color);
+  position: relative;
+  background-image: url(../img/logo.png);
+  display: block;
+}
+
+.preloader-text::after {
+  content: attr(data-fill-text);
+  position: absolute;
+  left: 0;
+  color: var(--pri-color);
+  -webkit-text-stroke: 0 transparent;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  animation: 3.5s reFill cubic-bezier(0.77, 0, 0.175, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes reFill {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes setWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes changeBackground {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
+@keyframes setTransform {
+  0% {
+  }
+  100% {
+    transform: translate(0%, -100%);
+  }
+}

@@ -1,29 +1,30 @@
 .modal-container {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
-  background-color: black;
-  display: none;
+  height: 100%;
+  width: 30%;
+  background-color: var(--pri-color);
+  display: flex;
   z-index: 8;
   animation: fadeIn ease 0.5s;
   opacity: 1;
-  transition: all ease 0.2s, background-color ease 0.5s;
+  transition: all 0.75s cubic-bezier(0.77, 0, 0.175, 1);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(100%);
 }
 
 .menu-item {
   text-decoration: none;
   color: #fff;
   font-size: 8rem;
-  position: absolute;
   text-transform: uppercase;
-  letter-spacing: 0.6rem;
-  font-family: DrunkWide;
+  font-family: Oswald;
   z-index: 2;
-  mix-blend-mode: difference;
 }
-
+/* 
 .menu-item:nth-of-type(1) {
   top: 20%;
   left: 2%;
@@ -43,7 +44,7 @@
   bottom: 3%;
   right: 2%;
   animation: slideLeft ease 0.5s;
-}
+} */
 
 .menu-item-image {
   position: absolute;
