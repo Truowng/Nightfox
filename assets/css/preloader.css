@@ -14,8 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 3.5s changeBackground cubic-bezier(0.77, 0, 0.175, 1),
-    setTransform 0.75s cubic-bezier(0.77, 0, 0.175, 1) 3.5s;
+  animation: setTransform 0.75s cubic-bezier(0.77, 0, 0.175, 1) 3.5s;
+  /* 3.5s changeBackground cubic-bezier(0.77, 0, 0.175, 1) */
   animation-fill-mode: forwards;
 }
 
@@ -29,7 +29,7 @@
   text-transform: uppercase;
   font-size: 15vw;
   color: transparent;
-  -webkit-text-stroke: 0.2rem var(--pri-color);
+  -webkit-text-stroke: 0.2rem #000;
   position: relative;
   background-image: url(../img/logo.png);
   display: block;

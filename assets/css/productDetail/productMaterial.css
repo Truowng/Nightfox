@@ -32,11 +32,14 @@
   justify-content: center;
   max-width: 48vw;
   font-weight: bold;
+  font-family: "Roboto Condensed";
+  font-weight: 100;
 }
 
 .product-detail-material-image-text span {
   font-size: 1.5vw;
   margin-top: 1rem;
-  font-weight: 400;
+  font-weight: 100;
   font-weight: normal;
+  font-family: "Roboto Condensed";
 }

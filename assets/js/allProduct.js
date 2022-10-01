@@ -1,13 +1,3 @@
-const productSectionContainer = document.querySelector(
-  ".all-product-section-image-container .row"
-);
-
-const productSectionListItems = document.querySelectorAll(
-  ".all-product-section-list-item"
-);
-
-const productSectionTitle = document.querySelector(".all-product-title");
-
 const productInfomations = [
   {
     image:
@@ -100,6 +90,16 @@ const productInfomations = [
     price: "339.000đ",
   },
 ];
+
+const productSectionContainer = document.querySelector(
+  ".all-product-section-image-container .row"
+);
+
+const productSectionListItems = document.querySelectorAll(
+  ".all-product-section-list-item"
+);
+
+const productSectionTitle = document.querySelector(".all-product-title");
 
 const allProducts = productInfomations.map((productInfomation) => {
   return `<a href="productDetail.html"

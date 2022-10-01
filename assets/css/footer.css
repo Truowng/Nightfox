@@ -71,6 +71,11 @@
   letter-spacing: 0.1rem;
 }
 
+.social-privacy-link:hover,
+.social-link-item:hover {
+  color: #000;
+}
+
 .social-link-item:first-child {
   margin-bottom: 1rem;
 }

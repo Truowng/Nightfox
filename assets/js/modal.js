@@ -22,27 +22,3 @@ menu.addEventListener("click", () => {
     toggleModal = 0;
   }
 });
-
-// items.forEach((item, index) => {
-//   item.addEventListener("mousemove", (e) => {
-//     document.querySelector(
-//       `.menu-item-image:nth-of-type(${index + 1})`
-//     ).style.opacity = 1;
-//     document.querySelector(
-//       `.menu-item-image:nth-of-type(${index + 1})`
-//     ).style.transform = "translate(50%, -50%) scale(1)";
-//     document.querySelector(
-//       ".modal-container"
-//     ).style.backgroundColor = `${colors[index]}`;
-//   });
-
-//   item.addEventListener("mouseleave", (e) => {
-//     document.querySelector(
-//       `.menu-item-image:nth-of-type(${index + 1})`
-//     ).style.opacity = 0;
-//     document.querySelector(
-//       `.menu-item-image:nth-of-type(${index + 1})`
-//     ).style.transform = "translate(50%, -50%) scale(0.9)";
-//     document.querySelector(".modal-container").style.backgroundColor = "black";
-//   });
-// });

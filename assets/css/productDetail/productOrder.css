@@ -55,13 +55,14 @@
 .product-detail-order-infomation-name-tag {
   font-size: 3vw;
   font-family: "Gwendolyn", cursive;
-  color: orangered;
+  color: var(--pri-color);
 }
 
 .product-detail-order-infomation-name {
   font-size: 2.5vw;
   margin-bottom: 2rem;
   max-width: 27vw;
+  font-family: Oswald;
 }
 
 .product-detail-order-infomation-price-container {
@@ -142,7 +143,7 @@
   padding: 1rem 0;
   text-align: center;
   transition: all ease 0.3s;
-  font-family: Quicksand;
+  font-family: Oswald;
 }
 
 .product-detail-order-infomation-size-checkbox:checked
