@@ -1,8 +1,7 @@
 const menu = document.querySelector(".header-btn");
-const items = document.querySelectorAll(".menu-item");
+const menuItems = document.querySelectorAll(".menu-item");
+// const tabletAndMobileBreakpoint = window.matchMedia("(max-width: 1024px)");
 let toggleModal = 0;
-
-colors = ["#513252", "#7A4069", "#CA4E79", "#FFC18E"];
 
 menu.addEventListener("click", () => {
   if (toggleModal === 0) {
@@ -22,3 +21,28 @@ menu.addEventListener("click", () => {
     toggleModal = 0;
   }
 });
+
+// function itemResponsive(tabletAndMobileBreakpoint) {
+//   if (tabletAndMobileBreakpoint.matches) {
+//     if (toggleModal === 0) {
+//       menuItems.forEach((menuItem) => {
+//         menuItem.style.setProperty = ("--background", "green");
+//         menuItem.style.setProperty =
+//           ("--animation", "0.6s reFill cubic-bezier(0.77, 0, 0.175, 1) 0.75s");
+//         menuItem.style.setProperty = ("--animation-fill-mode", "forwards");
+//       });
+//       toggleModal = 1;
+//     } else {
+//       const closeModal = () => {
+//         menuItems.forEach((menuItem) => {
+//           menuItem.style.setProperty = ("--animation", "none");
+//           menuItem.style.setProperty = ("--animation-fill-mode", "forwards");
+//         });
+//       };
+//       closeModal();
+//       toggleModal = 0;
+//     }
+//   }
+// }
+// itemResponsive(tabletAndMobileBreakpoint);
+// tabletAndMobileBreakpoint.addListener(itemResponsive);

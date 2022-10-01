@@ -17,7 +17,7 @@
 }
 
 .header-btn-icon {
-  font-size: 1.4rem;
+  font-size: 1vw;
 }
 
 .header-btn:hover {
@@ -25,7 +25,7 @@
 }
 
 .header-btn:hover .header-btn-icon {
-  color: black;
+  color: #000;
 }
 
 .logo-image {

@@ -214,6 +214,41 @@
   .copyright-text {
     font-size: 2vw;
   }
+
+  /* MODAL */
+  .modal-container {
+    width: 100%;
+    border-left: none;
+  }
+
+  .menu-item {
+    font-size: 20vw;
+  }
+
+  /* PRELOAD */
+
+  .preloader-text {
+    font-size: 30vw;
+  }
+
+  /* HEADER */
+  .header-btn {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .logo-image {
+    top: 2rem;
+    width: 20vw;
+  }
+
+  .header-btn-icon {
+    font-size: 4vw;
+  }
+
+  .menu-item::before {
+    /* width: 100%; */
+  }
 }
 
 /* mobile  */
