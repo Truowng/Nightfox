@@ -245,6 +245,10 @@
     font-size: 2vw;
   }
 
+  .header-btn:hover {
+    transform: none;
+  }
+
   .logo-image {
     top: 2rem;
     width: 9vw;
@@ -365,23 +369,23 @@
   }
 
   .all-product-section-list-item::after {
-    top: 8%;
-    left: -2.7%;
-    height: 103%;
-    width: 2.5%;
+    top: 9%;
+    left: -4%;
+    height: 105%;
+    width: 4%;
     transform: skew(0, -46deg);
   }
 
   .all-product-section-list-item::before {
-    bottom: -23%;
-    left: -1.58%;
+    bottom: -25%;
+    left: -2.1%;
     height: 23%;
     width: 101%;
     transform: skew(-45deg, 0deg);
   }
 
   .all-product-section-list-item a {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .all-product-section-image {
@@ -390,7 +394,7 @@
 
   .all-product-section-info-price,
   .all-product-section-info-name {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
