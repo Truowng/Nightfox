@@ -3,7 +3,6 @@
 @import url(./footer.css);
 @import url(./header.css);
 @import url(./modal.css);
-@import url(./responsive.css);
 @import url(./preloader.css);
 
 @import url(./homepage/banner.css);
@@ -18,3 +17,5 @@
 @import url(./productDetail/productOrder.css);
 
 @import url(./allProduct/allProduct.css);
+
+@import url(./responsive.css);
