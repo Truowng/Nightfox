@@ -27,9 +27,9 @@
 .preloader-text {
   font-family: test;
   text-transform: uppercase;
-  font-size: 15vw;
+  font-size: 30vw;
   color: transparent;
-  -webkit-text-stroke: 0.2rem #000;
+  -webkit-text-stroke: 0.2rem var(--pri-color);
   position: relative;
   background-image: url(../img/logo.png);
   display: block;
