@@ -117,11 +117,13 @@ const allProducts = productInfomations.map((productInfomation) => {
 productSectionContainer.innerHTML = allProducts.join("");
 
 productSectionListItems.forEach((productSectionListItem, index) => {
+  const productSectionListItemText = productSectionListItem.querySelector("a");
+  console.log(productSectionListItemText);
   productSectionListItem.addEventListener("click", () => {
     document.querySelector(".active")
       ? document.querySelector(".active").classList.remove("active")
       : "";
-    productSectionListItem.classList.add("active");
+    productSectionListItemText.classList.add("active");
     productSectionTitle.innerText =
       productSectionListItem.querySelector("a").innerText;
   });

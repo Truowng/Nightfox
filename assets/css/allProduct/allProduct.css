@@ -12,8 +12,6 @@
   font-weight: 600;
   letter-spacing: 0.5vw;
   transition: all ease 0.2s;
-  /* transform: skew(0deg, 8deg); */
-  /* font-family: IvyMode; */
 }
 
 .all-product-section-container {
@@ -28,58 +26,29 @@
   list-style: none;
   position: sticky;
   top: 8vw;
-  padding-right: 10%;
+  /* padding-right: 10%; */
 }
 
 .all-product-section-list-item {
   margin-bottom: 10%;
   text-align: center;
-  border: 0.1rem solid #000;
-  /* transition: all ease 0.2s; */
-  transform: translate(0.5vw, 0) skew(0, 8deg);
+  color: #dedede;
   position: relative;
   z-index: 1;
 }
 
-.all-product-section-list-item::after,
-.all-product-section-list-item::before {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  z-index: 0;
-  /* transition: all ease 0.2s; */
-}
-
-.all-product-section-list-item::after {
-  top: 6.6%;
-  left: -5%;
-  height: 104%;
-  width: 4.7%;
-  transform: skew(0, -46deg);
-}
-.all-product-section-list-item::before {
-  bottom: -20%;
-  left: -2.58%;
-  height: 20%;
-  width: 101%;
-  transform: skew(-45deg, 0deg);
-}
-
-.all-product-section-list-item:hover {
-  transform: translate(0vw, 0) skew(0, 8deg);
-}
-.all-product-section-list-item:hover:after,
-.all-product-section-list-item:hover::before {
-  opacity: 0;
+.all-product-section-list-item:hover a {
+  color: #000;
 }
 
 .all-product-section-list-item a {
   font-size: 1.2vw;
   text-decoration: none;
-  color: #000;
+  color: #dedede;
+
   display: block;
   text-transform: uppercase;
-  font-family: Oswald;
+  font-family: Avenir;
   padding: 0.5vw 0;
   position: relative;
   z-index: 1;
@@ -91,7 +60,6 @@
   margin-bottom: 1vw;
   transition: all ease 0.2s;
   position: relative;
-  /* transform: skew(0, 8deg); */
 }
 
 .all-product-section-image-item-container:hover {
@@ -99,8 +67,6 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 0 40px rgba(221, 67, 2, 35%);
-  /* border: 0.1rem dotted var(--pri-color); */
-  /* background-color: var(--pri-color); */
   transform: translate(0, -0.5vw);
 }
 
@@ -121,7 +87,7 @@
 .all-product-section-info-name {
   font-size: 1vw;
   margin-bottom: 0;
-  font-family: Oswald;
+  font-family: Avenir;
   text-transform: uppercase;
   color: #000;
   margin-bottom: 1%;
@@ -129,6 +95,6 @@
 
 .all-product-section-info-price {
   font-size: 1vw;
-  font-family: "Oswald";
+  font-family: Avenir;
   color: var(--pri-color);
 }

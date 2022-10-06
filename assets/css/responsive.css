@@ -504,14 +504,6 @@
     margin: 0 2% 5% 2%;
   }
 
-  .all-product-section-list-item:hover {
-    transform: translate(-0.5vw, 0.5vw);
-  }
-
-  .active {
-    transform: translate(-0.5vw, 0.5vw) !important;
-  }
-
   .all-product-section-list-item:nth-of-type(2),
   .all-product-section-list-item:last-of-type {
     margin-right: 0;
@@ -583,14 +575,6 @@
     margin: 0 2% 2% 2%;
   }
 
-  .all-product-section-list-item:hover {
-    transform: translate(-0.5vw, 0.5vw);
-  }
-
-  .active {
-    transform: translate(-0.5vw, 0.5vw) !important;
-  }
-
   .all-product-section-list-item:nth-of-type(2),
   .all-product-section-list-item:last-of-type {
     margin-right: 0;
@@ -648,9 +632,7 @@
     margin: 0 2% 2% 2%;
   }
 
-  .all-product-section-list-item:hover {
-    transform: translate(-0.5vw, 0.5vw);
-  }
+  
 
   .active {
     transform: translate(-0.5vw, 0.5vw);
