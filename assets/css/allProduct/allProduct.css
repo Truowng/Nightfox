@@ -45,7 +45,7 @@
   font-size: 1.2vw;
   text-decoration: none;
   color: #dedede;
-
+  transition: all ease 0.2s;
   display: block;
   text-transform: uppercase;
   font-family: Avenir;
@@ -63,7 +63,7 @@
 }
 
 .all-product-section-image-item-container:hover {
-  background: white;
+  background: #fff;
   position: relative;
   z-index: 2;
   box-shadow: 0 0 40px rgba(221, 67, 2, 35%);
