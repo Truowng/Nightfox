@@ -53,3 +53,14 @@ labels.forEach((label) => {
     innerCursor.classList.remove("grow");
   });
 });
+
+document
+  .querySelector(".cart-modal-close-btn")
+  .addEventListener("mouseover", () => {
+    innerCursor.classList.add("grow");
+  });
+document
+  .querySelector(".cart-modal-close-btn")
+  .addEventListener("mouseleave", () => {
+    innerCursor.classList.remove("grow");
+  });

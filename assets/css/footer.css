@@ -22,7 +22,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://images.unsplash.com/photo-1616837874254-8d5aaa63e273?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=556&q=80);
+  background-image: url(../img/HoangAnhModel/1.JPG);
 }
 
 .follow-us-text {
@@ -62,9 +62,9 @@
 
 .social-link-item {
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 0.9vw;
   margin: 0 0.5rem;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: Avenir;
   color: #000;
   display: flex;
   align-items: center;
@@ -114,15 +114,15 @@
 .social-privacy-link {
   text-decoration: none;
   color: #000;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1vw;
+  font-family: Avenir;
+  font-size: 0.9vw;
   margin-bottom: 1rem;
   letter-spacing: 0.1rem;
 }
 
 .social-infomation-container {
   display: flex;
-  font-size: 1vw;
+  font-size: 0.9vw;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -130,8 +130,8 @@
 .social-infomation-text {
   text-decoration: none;
   color: #000;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1vw;
+  font-family: Avenir;
+  font-size: 0.9vw;
   margin-bottom: 1rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -149,7 +149,7 @@
 }
 
 .copyright-text {
-  font-size: 1vw;
+  font-size: 0.9vw;
   text-transform: uppercase;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: Avenir;
 }

@@ -1,0 +1,37 @@
+.cart-modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+  display: none;
+}
+
+.cart-modal-container {
+  background-color: #fff;
+  width: 50%;
+  height: 70%;
+  position: relative;
+}
+
+.cart-modal-close-btn {
+  position: absolute;
+  background-color: #000;
+  top: 2%;
+  right: 1%;
+  width: 2vw;
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-modal-close-btn i {
+  color: #fff;
+  font-size: 1vw;
+}
