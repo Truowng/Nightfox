@@ -40,7 +40,7 @@
           <i class="fa-solid fa-bars header-btn-icon"></i>
         </div>
         <a href="#" class="header-cart-btn-link">
-          <p class="header-cart-number">5</p>
+          <p class="header-cart-number"></p>
           <img
             src="https://img.icons8.com/ios/50/000000/shopping-bag--v1.png"
           />
@@ -456,13 +456,13 @@
             </p>
             <p class="social-infomation-text">Phone: 0977914444</p>
             <p class="social-infomation-text">
-              Address: 33/64 Le Trong Tan street, Thanh Xuan district, Hanoi
+              Address: 33/64 Le thong Tan stheet, Thanh Xuan disthict, Hanoi
             </p>
           </div>
         </div>
         <div class="copyright-container">
           <p class="copyright-text">
-            Copyright © 2022 Nightfox Streetwear. Powered by Haravan
+            Copyright © 2022 Nightfox Stheetwear. Powered by Haravan
           </p>
         </div>
       </div>
@@ -502,6 +502,113 @@
           <div class="cart-modal-close-btn">
             <i class="fa-solid fa-xmark"></i>
           </div>
+          <p class="cart-modal-title">
+            your <br />
+            basket
+          </p>
+          <table class="cart-modal-table">
+            <tr class="cart-modal-header-row">
+              <th class="cart-modal-product">product</th>
+              <th class="cart-modal-quantity">quantity</th>
+              <th class="cart-modal-total">total</th>
+            </tr>
+            <tr class="cart-modal-row">
+              <td class="cart-modal-item-product-container">
+                <div class="cart-modal-item-product-image"></div>
+                <div class="cart-modal-item-product-info">
+                  <p class="cart-modal-item-product-name">
+                    nightfox <br />basic T-shirt
+                  </p>
+                  <p class="cart-modal-item-product-price">
+                    UNIT PRICE: <span>199000</span>
+                  </p>
+                </div>
+              </td>
+              <td class="cart-modal-item-quantity-container">
+                <button class="cart-modal-item-quantity-minus-btn">
+                  &#8722;
+                </button>
+                <input
+                  type="number"
+                  onchange="{cartCalculation()}"
+                  value="1"
+                  min="1"
+                  class="cart-modal-item-quantity"
+                />
+                <button class="cart-modal-item-quantity-plus-btn">
+                  &plus;
+                </button>
+                <button class="cart-modal-item-quantity-delete-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </td>
+              <td class="cart-modal-item-total-container">199000</td>
+            </tr>
+            <tr class="cart-modal-row">
+              <td class="cart-modal-item-product-container">
+                <div class="cart-modal-item-product-image"></div>
+                <div class="cart-modal-item-product-info">
+                  <p class="cart-modal-item-product-name">
+                    nightfox <br />basic T-shirt
+                  </p>
+                  <p class="cart-modal-item-product-price">
+                    UNIT PRICE: <span>199000</span>
+                  </p>
+                </div>
+              </td>
+              <td class="cart-modal-item-quantity-container">
+                <button class="cart-modal-item-quantity-minus-btn">
+                  &#8722;
+                </button>
+                <input
+                  type="number"
+                  onchange="{cartCalculation()}"
+                  value="1"
+                  min="1"
+                  class="cart-modal-item-quantity"
+                />
+                <button class="cart-modal-item-quantity-plus-btn">
+                  &plus;
+                </button>
+                <button class="cart-modal-item-quantity-delete-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </td>
+              <td class="cart-modal-item-total-container">199000</td>
+            </tr>
+            <tr class="cart-modal-row">
+              <td class="cart-modal-item-product-container">
+                <div class="cart-modal-item-product-image"></div>
+                <div class="cart-modal-item-product-info">
+                  <p class="cart-modal-item-product-name">
+                    nightfox <br />unbasic T-shirt
+                  </p>
+                  <p class="cart-modal-item-product-price">
+                    UNIT PRICE: <span>299000</span>
+                  </p>
+                </div>
+              </td>
+              <td class="cart-modal-item-quantity-container">
+                <button class="cart-modal-item-quantity-minus-btn">
+                  &#8722;
+                </button>
+                <input
+                  type="number"
+                  onchange="{cartCalculation()}"
+                  value="1"
+                  min="1"
+                  class="cart-modal-item-quantity"
+                />
+                <button class="cart-modal-item-quantity-plus-btn">
+                  &plus;
+                </button>
+                <button class="cart-modal-item-quantity-delete-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </td>
+              <td class="cart-modal-item-total-container">299000</td>
+            </tr>
+          </table>
         </div>
       </div>
       <!-- End Cart Modal -->
@@ -509,7 +616,7 @@
       <!-- Javascript -->
       <!-- <script
    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
-   integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+   integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sthgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
    crossorigin="anonymous"
    referrerpolicy="no-referrer"
  ></script>
@@ -553,6 +660,7 @@
       <script src="./assets/js/modal.js"></script>
       <script src="./assets/js/cursor.js"></script>
       <script src="./assets/js/footer.js"></script>
+      <script src="./assets/js/cartModal.js"></script>
     </div>
   </body>
 </html>
