@@ -10,6 +10,10 @@ const cartItemQuantityPlusBtn = document.querySelector(
   ".cart-modal-item-quantity-plus-btn"
 );
 
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 const cartCalculation = () => {
   cartModalItems.forEach((cartModalItem) => {
     const cartModalItemTotal = cartModalItem.querySelector(
@@ -21,8 +25,9 @@ const cartCalculation = () => {
     const cartModalItemProductPrice = cartModalItem.querySelector(
       ".cart-modal-item-product-price span"
     ).innerText;
-    cartModalItemTotal.innerText =
-      cartModalItemQuantity * cartModalItemProductPrice;
+    cartModalItemTotal.innerText = `${numberWithCommas(
+      cartModalItemQuantity * cartModalItemProductPrice
+    )}đ`;
   });
 };
 
@@ -59,16 +64,25 @@ cartModalItems.forEach((cartModalItem) => {
 });
 
 cartModalCloseBtn.addEventListener("click", () => {
-  cartModal.style.display = "none";
+  cartModal.style.animation = "fadeOut cubic-bezier(0.77, 0, 0.175, 1) 0.75s";
+  setTimeout(() => {
+    cartModal.style.display = "none";
+  }, 760);
 });
 
 cartBtn.addEventListener("click", () => {
+  cartModal.style.animation = "fadeOut cubic-bezier(0.77, 0, 0.175, 1) 0.75s";
   cartModal.style.display = "flex";
 });
 
 const cartInit = () => {
   cartCalculation();
   cartIconNumber.innerText = cartModalItems.length;
+
+  document.querySelectorAll(".cart-modal-item-product-price span").innerText =
+    numberWithCommas(
+      document.querySelector(".cart-modal-item-product-price span").innerText
+    );
 };
 
 cartInit();
