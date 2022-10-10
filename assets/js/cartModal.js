@@ -65,13 +65,17 @@ cartModalItems.forEach((cartModalItem) => {
 
 cartModalCloseBtn.addEventListener("click", () => {
   cartModal.style.animation = "fadeOut cubic-bezier(0.77, 0, 0.175, 1) 0.75s";
+  cartModal.querySelector(".cart-modal-container").style.animation =
+    "closeCartModal 0.75s cubic-bezier(0.77, 0, 0.175, 1)";
   setTimeout(() => {
     cartModal.style.display = "none";
-  }, 760);
+  }, 750);
 });
 
 cartBtn.addEventListener("click", () => {
-  cartModal.style.animation = "fadeOut cubic-bezier(0.77, 0, 0.175, 1) 0.75s";
+  cartModal.style.animation = "fadeIn cubic-bezier(0.77, 0, 0.175, 1) 0.75s";
+  cartModal.querySelector(".cart-modal-container").style.animation =
+    "openCartModal 0.75s cubic-bezier(0.77, 0, 0.175, 1)";
   cartModal.style.display = "flex";
 });
 

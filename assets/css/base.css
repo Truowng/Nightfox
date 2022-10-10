@@ -106,6 +106,26 @@ a:hover {
   }
 }
 
+@keyframes openCartModal {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes closeCartModal {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 @keyframes slideShow {
   0% {
     transform: translateX(0);
