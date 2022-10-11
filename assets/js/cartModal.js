@@ -124,57 +124,58 @@ const cartCalculation = () => {
     cartModalItemTotal.innerText = `${numberWithCommas(
       cartModalItemQuantity * cartModalItemProductPrice
     )}đ`;
-    console.log(cartModalItem);
+    console.log(cartModalItemTotal.innerHTML);
   });
 };
 
-// CARTITEM MAP
+console.log(cartCalculation());
 
-const allCartProductTitle = ` <tr class="cart-modal-header-row">
-<th class="cart-modal-product">product</th>
-<th class="cart-modal-quantity">quantity</th>
-<th class="cart-modal-total">total</th>
-</tr>`;
+// // CARTITEM MAP
+// const allCartProductTitle = ` <tr class="cart-modal-header-row">
+// <th class="cart-modal-product">product</th>
+// <th class="cart-modal-quantity">quantity</th>
+// <th class="cart-modal-total">total</th>
+// </tr>`;
 
-const allCartProducts = cartProductInfomations.map((cartProductInfomation) => {
-  return `<tr class="cart-modal-row">
-    <td class="cart-modal-item-product-container">
-    <div class="cart-modal-item-product-image" style="background-image: url(${
-      cartProductInfomation.image
-    })"></div>
-    <div class="cart-modal-item-product-info">
-      <p class="cart-modal-item-product-name">
-        ${cartProductInfomation.name}
-      </p>
-      <p class="cart-modal-item-product-price">
-        UNIT PRICE: <span>${cartProductInfomation.price}</span>đ
-      </p>
-    </div>
-  </td>
-  <td class="cart-modal-item-quantity-container">
-    <button class="cart-modal-item-quantity-minus-btn">
-      &#8722;
-    </button>
-    <input
-      type="number"
-      onchange="${cartCalculation()}"
-      value="1"
-      min="1"
-      class="cart-modal-item-quantity"
-    />
-    <button class="cart-modal-item-quantity-plus-btn">&plus;</button>
-    <button class="cart-modal-item-quantity-delete-btn">
-      <i class="fa-solid fa-trash-can"></i>
-    </button>
-  </td>
-  <td class="cart-modal-item-total-container"></td>
-</tr>`;
-});
+// const allCartProducts = cartProductInfomations.map((cartProductInfomation) => {
+//   return `<tr class="cart-modal-row">
+//     <td class="cart-modal-item-product-container">
+//     <div class="cart-modal-item-product-image" style="background-image: url(${
+//       cartProductInfomation.image
+//     })"></div>
+//     <div class="cart-modal-item-product-info">
+//       <p class="cart-modal-item-product-name">
+//         ${cartProductInfomation.name}
+//       </p>
+//       <p class="cart-modal-item-product-price">
+//         UNIT PRICE: <span>${cartProductInfomation.price}</span>đ
+//       </p>
+//     </div>
+//   </td>
+//   <td class="cart-modal-item-quantity-container">
+//     <button class="cart-modal-item-quantity-minus-btn">
+//       &#8722;
+//     </button>
+//     <input
+//       type="number"
+//       onchange="${cartCalculation()}"
+//       value="1"
+//       min="1"
+//       class="cart-modal-item-quantity"
+//     />
+//     <button class="cart-modal-item-quantity-plus-btn">&plus;</button>
+//     <button class="cart-modal-item-quantity-delete-btn">
+//       <i class="fa-solid fa-trash-can"></i>
+//     </button>
+//   </td>
+//   <td class="cart-modal-item-total-container">${cartCalculation()}</td>
+// </tr>`;
+// });
 
-cartModalTable.innerHTML = allCartProductTitle.concat(
-  "",
-  allCartProducts.join("")
-);
+// cartModalTable.innerHTML = allCartProductTitle.concat(
+//   "",
+//   allCartProducts.join("")
+// );
 
 // PLUS/MINUS/DEL FUNCTION
 
@@ -205,7 +206,6 @@ cartModalItems.forEach((cartModalItem) => {
   cartModalItem
     .querySelector(".cart-modal-item-quantity-delete-btn")
     .addEventListener("click", () => {
-      console.log("asdasd");
       cartModalItem.remove();
       cartInit();
     });
@@ -234,11 +234,6 @@ cartBtn.addEventListener("click", () => {
 const cartInit = () => {
   cartCalculation();
   cartIconNumber.innerText = cartModalItems.length;
-
-  document.querySelectorAll(".cart-modal-item-product-price span").innerText =
-    numberWithCommas(
-      document.querySelector(".cart-modal-item-product-price span").innerText
-    );
 };
 
 cartInit();
