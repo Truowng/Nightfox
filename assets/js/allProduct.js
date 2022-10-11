@@ -118,7 +118,6 @@ productSectionContainer.innerHTML = allProducts.join("");
 
 productSectionListItems.forEach((productSectionListItem, index) => {
   const productSectionListItemText = productSectionListItem.querySelector("a");
-  console.log(productSectionListItemText);
   productSectionListItem.addEventListener("click", () => {
     document.querySelector(".active")
       ? document.querySelector(".active").classList.remove("active")

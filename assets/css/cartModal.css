@@ -68,6 +68,10 @@
   width: 100%;
 }
 
+.cart-modal-table th {
+  font-weight: 100;
+}
+
 .cart-modal-table tr td {
   border-bottom: 0.1rem solid #000;
 }
@@ -139,7 +143,7 @@
   font-family: Avenir;
   color: #fff;
   transition: all ease 0.3s;
-  padding: 0.45vw 0.85vw;
+  padding: 0.6vw 0.85vw;
   border: 0.1rem solid transparent;
 }
 
