@@ -10,7 +10,6 @@
   text-align: center;
   font-family: Avenir;
   font-weight: 600;
-  letter-spacing: 0.5vw;
   transition: all ease 0.2s;
 }
 
@@ -44,7 +43,7 @@
 .all-product-section-list-item a {
   font-size: 1.2vw;
   text-decoration: none;
-  color: #dedede;
+  color: #b8b8b8;
   transition: all ease 0.2s;
   display: block;
   text-transform: uppercase;
@@ -65,7 +64,7 @@
   background: #fff;
   position: relative;
   z-index: 2;
-  box-shadow: 0 0 40px rgba(221, 67, 2, 35%);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 15%);
   transform: translate(0, -0.5vw);
 }
 

@@ -26,17 +26,20 @@
 }
 
 .follow-us-text {
-  font-size: 6vw;
-  font-family: Roundhandbt;
+  font-size: 4vw;
+  font-family: Avenir;
   color: #fff;
   mix-blend-mode: difference;
-  margin-left: -1.4rem;
+  margin-left: -4vw;
+  text-transform: uppercase;
 }
 
 /* Social  */
 .social-container {
   display: flex;
   margin: 3rem 5rem;
+  justify-content: space-between;
+  padding-right: 2vw;
 }
 
 .social-logo-text,
@@ -80,44 +83,9 @@
   margin-bottom: 1rem;
 }
 
-.social-link-item:first-child .social-link-item-icon {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.social-link-item:nth-child(2) .social-link-item-icon {
-  color: #0f90f3;
-}
-
 .social-link-item-icon {
   font-size: 2rem;
   margin-right: 0.8rem;
-}
-
-.social-privacy-container {
-  display: flex;
-  /* font-size: 2rem; */
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-right: 3%;
-}
-
-.social-privacy-link {
-  text-decoration: none;
-  color: #000;
-  font-family: Avenir;
-  font-size: 0.9vw;
-  margin-bottom: 1rem;
-  letter-spacing: 0.1rem;
 }
 
 .social-infomation-container {
