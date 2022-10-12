@@ -97,6 +97,9 @@ const cartModalItems = document.querySelectorAll(".cart-modal-row");
 const cartModalTable = document.querySelector(".cart-modal-table");
 const cartModalCloseBtn = document.querySelector(".cart-modal-close-btn");
 const cartIconNumber = document.querySelector(".header-cart-number");
+const cartModalContinueShoppingBtn = document.querySelector(
+  ".cart-modal-btn-continue-shopping"
+);
 const cartItemQuantityMinusBtn = document.querySelector(
   ".cart-modal-item-quantity-minus-btn"
 );
@@ -110,7 +113,7 @@ function numberWithCommas(x) {
 
 // CALCULATE FUNCTION
 
-const cartCalculation = () => {
+const cartModalCalculation = () => {
   cartModalItems.forEach((cartModalItem) => {
     const cartModalItemTotal = cartModalItem.querySelector(
       ".cart-modal-item-total-container"
@@ -124,11 +127,10 @@ const cartCalculation = () => {
     cartModalItemTotal.innerText = `${numberWithCommas(
       cartModalItemQuantity * cartModalItemProductPrice
     )}đ`;
-    console.log(cartModalItemTotal.innerHTML);
   });
 };
 
-console.log(cartCalculation());
+console.log(cartModalCalculation());
 
 // // CARTITEM MAP
 // const allCartProductTitle = ` <tr class="cart-modal-header-row">
@@ -158,7 +160,7 @@ console.log(cartCalculation());
 //     </button>
 //     <input
 //       type="number"
-//       onchange="${cartCalculation()}"
+//       onchange="${cartModalCalculation()}"
 //       value="1"
 //       min="1"
 //       class="cart-modal-item-quantity"
@@ -168,7 +170,7 @@ console.log(cartCalculation());
 //       <i class="fa-solid fa-trash-can"></i>
 //     </button>
 //   </td>
-//   <td class="cart-modal-item-total-container">${cartCalculation()}</td>
+//   <td class="cart-modal-item-total-container">${cartModalCalculation()}</td>
 // </tr>`;
 // });
 
@@ -213,6 +215,15 @@ cartModalItems.forEach((cartModalItem) => {
 
 // OPEN/CLOSE MODAL
 
+cartModalContinueShoppingBtn.addEventListener("click", () => {
+  cartModal.style.animation = "fadeOut cubic-bezier(0.77, 0, 0.175, 1) 0.75s";
+  cartModal.querySelector(".cart-modal-container").style.animation =
+    "closeCartModal 0.75s cubic-bezier(0.77, 0, 0.175, 1)";
+  setTimeout(() => {
+    cartModal.style.display = "none";
+  }, 750);
+});
+
 cartModalCloseBtn.addEventListener("click", () => {
   cartModal.style.animation = "fadeOut cubic-bezier(0.77, 0, 0.175, 1) 0.75s";
   cartModal.querySelector(".cart-modal-container").style.animation =
@@ -232,7 +243,7 @@ cartBtn.addEventListener("click", () => {
 // INIT
 
 const cartInit = () => {
-  cartCalculation();
+  cartModalCalculation();
   cartIconNumber.innerText = cartModalItems.length;
 };
 

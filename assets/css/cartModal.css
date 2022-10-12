@@ -14,34 +14,25 @@
 }
 
 .cart-modal-container {
-  background-color: #fff;
+  background-color: var(--bg-light);
   width: 70%;
-  height: 80%;
+  height: 95%;
   position: relative;
   padding: 0.8vw;
-  overflow-y: scroll;
   animation-fill-mode: forwards;
   padding-top: 0;
-}
-
-.cart-modal-container::-webkit-scrollbar {
-  width: 1rem;
-}
-
-.cart-modal-container::-webkit-scrollbar-thumb {
-  background-color: #000;
 }
 
 .cart-modal-close-btn {
   position: absolute;
   background-color: #000;
   top: 2%;
+  right: 1%;
   width: 2vw;
   height: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   margin-left: auto;
   z-index: 1;
 }
@@ -58,22 +49,41 @@
   line-height: 2.5vw;
   padding: 0.8vw 0;
   margin-bottom: 0.8vw;
-  position: sticky;
-  background-color: #fff;
   top: 0;
+}
+
+.cart-modal-header-row {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 0.1rem solid #000;
+}
+
+.cart-modal-row-wrap {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.cart-modal-row-wrap::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.cart-modal-row-wrap::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+.cart-modal-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.cart-modal-row:last-child {
+  border-bottom: 0.1rem solid transparent;
 }
 
 .cart-modal-table {
   width: 100%;
-}
-
-.cart-modal-table th {
-  font-weight: 100;
-}
-
-.cart-modal-table tr td {
-  border-bottom: 0.1rem solid #000;
+  height: 75%;
 }
 
 .cart-modal-product,
@@ -83,20 +93,27 @@
   font-family: Avenir;
   text-transform: uppercase;
   text-align: left;
-  border-bottom: 0.1rem solid #000;
   padding-bottom: 0.8vw;
 }
 
-.cart-modal-total {
+.cart-modal-total,
+.cart-modal-item-total-container {
   text-align: right;
+  flex: 1;
 }
 
-.cart-modal-product {
-  width: 50%;
+.cart-modal-total {
+  padding-right: 1rem;
 }
 
-.cart-modal-quantity {
-  width: 30%;
+.cart-modal-product,
+.cart-modal-item-product-container {
+  flex: 4;
+}
+
+.cart-modal-quantity,
+.cart-modal-item-quantity-container {
+  flex: 1.5;
 }
 
 .cart-modal-item-product-container {
@@ -121,16 +138,19 @@
   text-transform: uppercase;
   font-family: Avenir;
   margin-bottom: 0.5vw;
+  font-weight: 600;
 }
 
 .cart-modal-item-product-price {
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: Avenir;
+  color: gray;
 }
 
 .cart-modal-item-product-price span {
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: Avenir;
+  color: gray;
   text-transform: lowercase;
 }
 
@@ -149,7 +169,7 @@
 
 .cart-modal-item-quantity-minus-btn:hover,
 .cart-modal-item-quantity-plus-btn:hover {
-  background-color: #fff;
+  background-color: var(--bg-light);
   color: #000;
   border-color: #000;
 }
@@ -161,7 +181,7 @@
   font-family: Avenir;
   color: #000;
   padding: 0.7vw 0.8vw;
-  background-color: #fff;
+  background-color: transparent;
   margin-left: 2vw;
   transition: all ease 0.3s;
 }
@@ -201,4 +221,67 @@
   font-size: 1vw;
   font-family: Avenir;
   text-align: right;
+}
+
+.cart-modal-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-modal-btn-continue-shopping,
+.cart-modal-btn-view-basket {
+  width: fit-content;
+  background-color: #000;
+  font-size: 1vw;
+  font-family: Avenir;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.5vw 1vw;
+  border-radius: 3rem;
+  overflow: hidden;
+  height: 2.3vw;
+  position: relative;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+.cart-modal-btn-continue-shopping:hover span,
+.cart-modal-btn-view-basket:hover span {
+  top: 0;
+}
+
+.cart-modal-btn-continue-shopping span,
+.cart-modal-btn-view-basket span {
+  display: block;
+  font-size: 1vw;
+  font-family: Avenir;
+  text-transform: uppercase;
+  background: var(--bg-light);
+  color: #000;
+  position: absolute;
+  top: 110%;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  padding: 0.5vw 0;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+
+.cart-modal-btn-continue-shopping {
+  position: absolute;
+  top: 50%;
+  left: -11%;
+  transform: rotate(-90deg) translateY(-50%);
+}
+
+.cart-modal-btn-view-basket {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: -8%;
+  transform: rotate(90deg) translateY(-50%);
+}
+
+.cart-modal-btn-view-basket:hover {
+  color: #fff;
 }

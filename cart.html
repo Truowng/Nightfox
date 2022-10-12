@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="//db.onlinewebfonts.com/c/1c87f20c55baa7eccc98b8603b5eecea?family=Grifinito+L"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>Nightfox</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Cursor  -->
+      <div class="inner-cursor"></div>
+      <div class="outer-cursor"></div>
+      <!-- Header -->
+      <div class="header-btn-container">
+        <div class="header-btn">
+          <i class="fa-solid fa-bars header-btn-icon"></i>
+        </div>
+      </div>
+
+      <a href="./index.html" class="logo-link">
+        <img src="./assets/img/logo.png" alt="Logo" class="logo-image" />
+      </a>
+      <!-- Content  -->
+
+      <div class="content-container">
+        <div class="cart-container">
+          <p class="cart-title">your <br />basket</p>
+          <div class="cart-table">
+            <div class="cart-header-row">
+              <div class="cart-product">product</div>
+              <div class="cart-quantity">quantity</div>
+              <div class="cart-total">total</div>
+            </div>
+            <div class="cart-row-wrap">
+              <div class="cart-row">
+                <div class="cart-item-product-container">
+                  <div class="cart-item-product-image"></div>
+                  <div class="cart-item-product-info">
+                    <p class="cart-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-item-quantity-container">
+                  <button class="cart-item-quantity-minus-btn">&#8722;</button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-item-quantity"
+                  />
+                  <button class="cart-item-quantity-plus-btn">&plus;</button>
+                  <button class="cart-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-item-total-container"></div>
+              </div>
+              <div class="cart-row">
+                <div class="cart-item-product-container">
+                  <div class="cart-item-product-image"></div>
+                  <div class="cart-item-product-info">
+                    <p class="cart-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-item-quantity-container">
+                  <button class="cart-item-quantity-minus-btn">&#8722;</button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-item-quantity"
+                  />
+                  <button class="cart-item-quantity-plus-btn">&plus;</button>
+                  <button class="cart-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-item-total-container"></div>
+              </div>
+              <div class="cart-row">
+                <div class="cart-item-product-container">
+                  <div class="cart-item-product-image"></div>
+                  <div class="cart-item-product-info">
+                    <p class="cart-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-item-quantity-container">
+                  <button class="cart-item-quantity-minus-btn">&#8722;</button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-item-quantity"
+                  />
+                  <button class="cart-item-quantity-plus-btn">&plus;</button>
+                  <button class="cart-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-item-total-container"></div>
+              </div>
+              <div class="cart-row">
+                <div class="cart-item-product-container">
+                  <div class="cart-item-product-image"></div>
+                  <div class="cart-item-product-info">
+                    <p class="cart-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-item-quantity-container">
+                  <button class="cart-item-quantity-minus-btn">&#8722;</button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-item-quantity"
+                  />
+                  <button class="cart-item-quantity-plus-btn">&plus;</button>
+                  <button class="cart-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-item-total-container"></div>
+              </div>
+              <div class="cart-row">
+                <div class="cart-item-product-container">
+                  <div class="cart-item-product-image"></div>
+                  <div class="cart-item-product-info">
+                    <p class="cart-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-item-quantity-container">
+                  <button class="cart-item-quantity-minus-btn">&#8722;</button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-item-quantity"
+                  />
+                  <button class="cart-item-quantity-plus-btn">&plus;</button>
+                  <button class="cart-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-item-total-container"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-subtotal-container">
+            <p class="cart-subtotal">
+              SUBTOTAL
+              <span>2000</span>
+            </p>
+            <p class="cart-subtotal-description">
+              Tax included. Shipping calculated at checkout
+            </p>
+            <a href="#" class="cart-subtotal-checkout-btn">
+              checkout
+              <span>checkout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer  -->
+      <div class="footer-container">
+        <div class="follow-us-container">
+          <div class="follow-us-image-wrapper">
+            <div class="follow-us-image-container"></div>
+            <div class="follow-us-image-container"></div>
+            <div class="follow-us-image-container"></div>
+            <div class="follow-us-image-container"></div>
+          </div>
+          <p class="follow-us-text">follow us</p>
+        </div>
+        <div class="social-container">
+          <p class="social-logo-text">NIGHT<span>FOX</span></p>
+          <div class="social-link-container">
+            <a
+              href="https://www.instagram.com/nightfox__official/"
+              class="social-link-item"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram social-link-item-icon"></i>
+              INSTAGRAM
+            </a>
+            <a
+              href="https://www.facebook.com/nightfoxvn"
+              class="social-link-item"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook social-link-item-icon"></i>
+              FACEBOOK
+            </a>
+          </div>
+          <div class="social-privacy-container">
+            <a href="#" class="social-privacy-link">PRIVACY POLICY</a>
+            <a href="#" class="social-privacy-link">CUSTOMER CARE</a>
+            <a href="#" class="social-privacy-link">RETURNS</a>
+            <a href="#" class="social-privacy-link">SHIPPING</a>
+          </div>
+          <div class="social-infomation-container">
+            <p class="social-infomation-text">
+              Email: nightfoxvietnam@gmail.com
+            </p>
+            <p class="social-infomation-text">Phone: 0977914444</p>
+            <p class="social-infomation-text">
+              Address: 33/64 Le thong Tan stheet, Thanh Xuan disthict, Hanoi
+            </p>
+          </div>
+        </div>
+        <div class="copyright-container">
+          <p class="copyright-text">
+            Copyright © 2022 Nightfox Stheetwear. Powered by Haravan
+          </p>
+        </div>
+      </div>
+      <!-- Modal  -->
+      <div class="modal-container">
+        <a href="index.html" class="menu-item" data-fill-text="home">HOME</a>
+        <a href="allProduct.html" class="menu-item" data-fill-text="product"
+          >PRODUCT</a
+        >
+        <a href="#" class="menu-item" data-fill-text="BLOG">BLOG</a>
+        <a href="#" class="menu-item" data-fill-text="ABOUT">ABOUT</a>
+      </div>
+
+      <!-- End modal -->
+
+      <!-- Cart Modal -->
+      <div class="cart-modal-background">
+        <div class="cart-modal-container">
+          <div class="cart-modal-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <p class="cart-modal-title">
+            your <br />
+            basket
+          </p>
+          <div class="cart-modal-table">
+            <div class="cart-modal-header-row">
+              <div class="cart-modal-product">product</div>
+              <div class="cart-modal-quantity">quantity</div>
+              <div class="cart-modal-total">total</div>
+            </div>
+            <div class="cart-modal-row-wrap">
+              <div class="cart-modal-row">
+                <div class="cart-modal-item-product-container">
+                  <div class="cart-modal-item-product-image"></div>
+                  <div class="cart-modal-item-product-info">
+                    <p class="cart-modal-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-modal-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-modal-item-quantity-container">
+                  <button class="cart-modal-item-quantity-minus-btn">
+                    &#8722;
+                  </button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-modal-item-quantity"
+                  />
+                  <button class="cart-modal-item-quantity-plus-btn">
+                    &plus;
+                  </button>
+                  <button class="cart-modal-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-modal-item-total-container"></div>
+              </div>
+              <div class="cart-modal-row">
+                <div class="cart-modal-item-product-container">
+                  <div class="cart-modal-item-product-image"></div>
+                  <div class="cart-modal-item-product-info">
+                    <p class="cart-modal-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-modal-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-modal-item-quantity-container">
+                  <button class="cart-modal-item-quantity-minus-btn">
+                    &#8722;
+                  </button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-modal-item-quantity"
+                  />
+                  <button class="cart-modal-item-quantity-plus-btn">
+                    &plus;
+                  </button>
+                  <button class="cart-modal-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-modal-item-total-container"></div>
+              </div>
+              <div class="cart-modal-row">
+                <div class="cart-modal-item-product-container">
+                  <div class="cart-modal-item-product-image"></div>
+                  <div class="cart-modal-item-product-info">
+                    <p class="cart-modal-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-modal-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-modal-item-quantity-container">
+                  <button class="cart-modal-item-quantity-minus-btn">
+                    &#8722;
+                  </button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-modal-item-quantity"
+                  />
+                  <button class="cart-modal-item-quantity-plus-btn">
+                    &plus;
+                  </button>
+                  <button class="cart-modal-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-modal-item-total-container"></div>
+              </div>
+              <div class="cart-modal-row">
+                <div class="cart-modal-item-product-container">
+                  <div class="cart-modal-item-product-image"></div>
+                  <div class="cart-modal-item-product-info">
+                    <p class="cart-modal-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-modal-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-modal-item-quantity-container">
+                  <button class="cart-modal-item-quantity-minus-btn">
+                    &#8722;
+                  </button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-modal-item-quantity"
+                  />
+                  <button class="cart-modal-item-quantity-plus-btn">
+                    &plus;
+                  </button>
+                  <button class="cart-modal-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-modal-item-total-container"></div>
+              </div>
+              <div class="cart-modal-row">
+                <div class="cart-modal-item-product-container">
+                  <div class="cart-modal-item-product-image"></div>
+                  <div class="cart-modal-item-product-info">
+                    <p class="cart-modal-item-product-name">
+                      nightfox <br />basic T-shirt
+                    </p>
+                    <p class="cart-modal-item-product-price">
+                      UNIT PRICE: <span>199000</span>đ
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-modal-item-quantity-container">
+                  <button class="cart-modal-item-quantity-minus-btn">
+                    &#8722;
+                  </button>
+                  <input
+                    type="number"
+                    onchange="{cartCalculation()}"
+                    value="1"
+                    min="1"
+                    class="cart-modal-item-quantity"
+                  />
+                  <button class="cart-modal-item-quantity-plus-btn">
+                    &plus;
+                  </button>
+                  <button class="cart-modal-item-quantity-delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <div class="cart-modal-item-total-container"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-modal-btn-container">
+            <div class="cart-modal-btn-continue-shopping">
+              continue shopping
+              <span>continue shopping</span>
+            </div>
+            <a href="cart.html" class="cart-modal-btn-view-basket">
+              view basket
+              <span> view basket </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Cart Modal -->
+
+      <!-- Javascript -->
+      <script src="./assets/js/modal.js"></script>
+      <script src="./assets/js/cursor.js"></script>
+      <script src="./assets/js/footer.js"></script>
+      <script src="./assets/js/cart.js"></script>
+    </div>
+  </body>
+</html>

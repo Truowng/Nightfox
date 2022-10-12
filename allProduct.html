@@ -209,103 +209,185 @@
           your <br />
           basket
         </p>
-        <table class="cart-modal-table">
-          <tr class="cart-modal-header-row">
-            <th class="cart-modal-product">product</th>
-            <th class="cart-modal-quantity">quantity</th>
-            <th class="cart-modal-total">total</th>
-          </tr>
-          <tr class="cart-modal-row">
-            <td class="cart-modal-item-product-container">
-              <div class="cart-modal-item-product-image"></div>
-              <div class="cart-modal-item-product-info">
-                <p class="cart-modal-item-product-name">
-                  nightfox <br />basic T-shirt
-                </p>
-                <p class="cart-modal-item-product-price">
-                  UNIT PRICE: <span>199000</span>đ
-                </p>
+        <div class="cart-modal-table">
+          <div class="cart-modal-header-row">
+            <div class="cart-modal-product">product</div>
+            <div class="cart-modal-quantity">quantity</div>
+            <div class="cart-modal-total">total</div>
+          </div>
+          <div class="cart-modal-row-wrap">
+            <div class="cart-modal-row">
+              <div class="cart-modal-item-product-container">
+                <div class="cart-modal-item-product-image"></div>
+                <div class="cart-modal-item-product-info">
+                  <p class="cart-modal-item-product-name">
+                    nightfox <br />basic T-shirt
+                  </p>
+                  <p class="cart-modal-item-product-price">
+                    UNIT PRICE: <span>199000</span>đ
+                  </p>
+                </div>
               </div>
-            </td>
-            <td class="cart-modal-item-quantity-container">
-              <button class="cart-modal-item-quantity-minus-btn">
-                &#8722;
-              </button>
-              <input
-                type="number"
-                onchange="{cartCalculation()}"
-                value="1"
-                min="1"
-                class="cart-modal-item-quantity"
-              />
-              <button class="cart-modal-item-quantity-plus-btn">&plus;</button>
-              <button class="cart-modal-item-quantity-delete-btn">
-                <i class="fa-solid fa-trash-can"></i>
-              </button>
-            </td>
-            <td class="cart-modal-item-total-container"></td>
-          </tr>
-          <tr class="cart-modal-row">
-            <td class="cart-modal-item-product-container">
-              <div class="cart-modal-item-product-image"></div>
-              <div class="cart-modal-item-product-info">
-                <p class="cart-modal-item-product-name">
-                  nightfox <br />basic T-shirt
-                </p>
-                <p class="cart-modal-item-product-price">
-                  UNIT PRICE: <span>199000</span>đ
-                </p>
+              <div class="cart-modal-item-quantity-container">
+                <button class="cart-modal-item-quantity-minus-btn">
+                  &#8722;
+                </button>
+                <input
+                  type="number"
+                  onchange="{cartModalCalculation()}"
+                  value="1"
+                  min="1"
+                  class="cart-modal-item-quantity"
+                />
+                <button class="cart-modal-item-quantity-plus-btn">
+                  &plus;
+                </button>
+                <button class="cart-modal-item-quantity-delete-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
               </div>
-            </td>
-            <td class="cart-modal-item-quantity-container">
-              <button class="cart-modal-item-quantity-minus-btn">
-                &#8722;
-              </button>
-              <input
-                type="number"
-                onchange="{cartCalculation()}"
-                value="1"
-                min="1"
-                class="cart-modal-item-quantity"
-              />
-              <button class="cart-modal-item-quantity-plus-btn">&plus;</button>
-              <button class="cart-modal-item-quantity-delete-btn">
-                <i class="fa-solid fa-trash-can"></i>
-              </button>
-            </td>
-            <td class="cart-modal-item-total-container"></td>
-          </tr>
-          <tr class="cart-modal-row">
-            <td class="cart-modal-item-product-container">
-              <div class="cart-modal-item-product-image"></div>
-              <div class="cart-modal-item-product-info">
-                <p class="cart-modal-item-product-name">
-                  nightfox <br />unbasic T-shirt
-                </p>
-                <p class="cart-modal-item-product-price">
-                  UNIT PRICE: <span>299000</span>đ
-                </p>
+              <div class="cart-modal-item-total-container"></div>
+            </div>
+            <div class="cart-modal-row">
+              <div class="cart-modal-item-product-container">
+                <div class="cart-modal-item-product-image"></div>
+                <div class="cart-modal-item-product-info">
+                  <p class="cart-modal-item-product-name">
+                    nightfox <br />basic T-shirt
+                  </p>
+                  <p class="cart-modal-item-product-price">
+                    UNIT PRICE: <span>199000</span>đ
+                  </p>
+                </div>
               </div>
-            </td>
-            <td class="cart-modal-item-quantity-container">
-              <button class="cart-modal-item-quantity-minus-btn">
-                &#8722;
-              </button>
-              <input
-                type="number"
-                onchange="{cartCalculation()}"
-                value="1"
-                min="1"
-                class="cart-modal-item-quantity"
-              />
-              <button class="cart-modal-item-quantity-plus-btn">&plus;</button>
-              <button class="cart-modal-item-quantity-delete-btn">
-                <i class="fa-solid fa-trash-can"></i>
-              </button>
-            </td>
-            <td class="cart-modal-item-total-container"></td>
-          </tr>
-        </table>
+              <div class="cart-modal-item-quantity-container">
+                <button class="cart-modal-item-quantity-minus-btn">
+                  &#8722;
+                </button>
+                <input
+                  type="number"
+                  onchange="{cartModalCalculation()}"
+                  value="1"
+                  min="1"
+                  class="cart-modal-item-quantity"
+                />
+                <button class="cart-modal-item-quantity-plus-btn">
+                  &plus;
+                </button>
+                <button class="cart-modal-item-quantity-delete-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+              <div class="cart-modal-item-total-container"></div>
+            </div>
+            <div class="cart-modal-row">
+              <div class="cart-modal-item-product-container">
+                <div class="cart-modal-item-product-image"></div>
+                <div class="cart-modal-item-product-info">
+                  <p class="cart-modal-item-product-name">
+                    nightfox <br />basic T-shirt
+                  </p>
+                  <p class="cart-modal-item-product-price">
+                    UNIT PRICE: <span>199000</span>đ
+                  </p>
+                </div>
+              </div>
+              <div class="cart-modal-item-quantity-container">
+                <button class="cart-modal-item-quantity-minus-btn">
+                  &#8722;
+                </button>
+                <input
+                  type="number"
+                  onchange="{cartModalCalculation()}"
+                  value="1"
+                  min="1"
+                  class="cart-modal-item-quantity"
+                />
+                <button class="cart-modal-item-quantity-plus-btn">
+                  &plus;
+                </button>
+                <button class="cart-modal-item-quantity-delete-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+              <div class="cart-modal-item-total-container"></div>
+            </div>
+            <div class="cart-modal-row">
+              <div class="cart-modal-item-product-container">
+                <div class="cart-modal-item-product-image"></div>
+                <div class="cart-modal-item-product-info">
+                  <p class="cart-modal-item-product-name">
+                    nightfox <br />basic T-shirt
+                  </p>
+                  <p class="cart-modal-item-product-price">
+                    UNIT PRICE: <span>199000</span>đ
+                  </p>
+                </div>
+              </div>
+              <div class="cart-modal-item-quantity-container">
+                <button class="cart-modal-item-quantity-minus-btn">
+                  &#8722;
+                </button>
+                <input
+                  type="number"
+                  onchange="{cartModalCalculation()}"
+                  value="1"
+                  min="1"
+                  class="cart-modal-item-quantity"
+                />
+                <button class="cart-modal-item-quantity-plus-btn">
+                  &plus;
+                </button>
+                <button class="cart-modal-item-quantity-delete-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+              <div class="cart-modal-item-total-container"></div>
+            </div>
+            <div class="cart-modal-row">
+              <div class="cart-modal-item-product-container">
+                <div class="cart-modal-item-product-image"></div>
+                <div class="cart-modal-item-product-info">
+                  <p class="cart-modal-item-product-name">
+                    nightfox <br />basic T-shirt
+                  </p>
+                  <p class="cart-modal-item-product-price">
+                    UNIT PRICE: <span>199000</span>đ
+                  </p>
+                </div>
+              </div>
+              <div class="cart-modal-item-quantity-container">
+                <button class="cart-modal-item-quantity-minus-btn">
+                  &#8722;
+                </button>
+                <input
+                  type="number"
+                  onchange="{cartModalCalculation()}"
+                  value="1"
+                  min="1"
+                  class="cart-modal-item-quantity"
+                />
+                <button class="cart-modal-item-quantity-plus-btn">
+                  &plus;
+                </button>
+                <button class="cart-modal-item-quantity-delete-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+              <div class="cart-modal-item-total-container"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-modal-btn-container">
+          <div class="cart-modal-btn-continue-shopping">
+            continue shopping
+            <span>continue shopping</span>
+          </div>
+          <a href="cart.html" class="cart-modal-btn-view-basket">
+            view basket
+            <span> view basket </span>
+          </a>
+        </div>
       </div>
     </div>
     <!-- End Cart Modal -->
