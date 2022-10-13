@@ -54,6 +54,12 @@
     width: 35vw;
   }
 
+  /* Carousel  */
+
+  .product-container {
+    display: none;
+  }
+
   /* Best seller  */
   .bestseller-container {
     flex-direction: column;
@@ -165,10 +171,10 @@
 
   .follow-us-text {
     position: absolute;
-    top: 48%;
-    left: 56%;
+    top: 50%;
+    left: 54.58%;
     transform: translate(-50%, -50%);
-    font-size: 10vw;
+    font-size: 7vw;
   }
 
   .social-container {
@@ -207,6 +213,7 @@
 
   .social-infomation-container {
     align-items: center;
+    margin-top: 3rem;
   }
 
   .social-infomation-text {
@@ -458,12 +465,6 @@
     top: 53%;
   }
 
-  /* Carousel  */
-
-  .product-container {
-    margin: 20rem 0 5rem;
-  }
-
   /* Contact  */
   .contact-infomation-description {
     font-size: 3vw;
@@ -480,6 +481,7 @@
   .social-infomation-text {
     text-align: center;
     font-size: 3vw;
+    line-height: 6vw;
   }
 
   .social-privacy-link {

@@ -37,8 +37,15 @@
   padding: 3rem 3rem 3rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+
+.contact-infomation-text-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
 }
 
 .contact-infomation-heading {
@@ -65,6 +72,7 @@
   align-items: center;
   justify-content: space-between;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-infomation-input-item {
@@ -78,6 +86,18 @@
   font-family: "Founders Grotesk";
   text-transform: uppercase;
   letter-spacing: 0.1vw;
+  flex: 1 1 35%;
+  margin: 1vw 0;
+}
+
+.contact-infomation-input-item[type="number"]::-webkit-outer-spin-button,
+.contact-infomation-input-item[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.contact-infomation-input-item[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .contact-infomation-input-item:first-child {

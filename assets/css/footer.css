@@ -16,7 +16,6 @@
 }
 
 .follow-us-image-container {
-  /* background-color: green; */
   width: 18vw;
   height: 18vw;
   background-position: center;
@@ -42,18 +41,13 @@
   padding-right: 2vw;
 }
 
-.social-logo-text,
-.social-logo-text span {
+.social-logo-text {
   font-size: 5vw;
   letter-spacing: 0.5rem;
   margin-top: -2rem;
   font-weight: bold;
   margin-right: 4rem;
   font-family: Avenir;
-}
-
-.social-logo-text span {
-  color: #dd4302;
 }
 
 .social-link-container {
