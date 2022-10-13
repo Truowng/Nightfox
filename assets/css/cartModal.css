@@ -75,6 +75,7 @@
   display: flex;
   align-items: center;
   border-bottom: 0.1rem solid #ddd;
+  padding: 1.5vw 0.5vw;
 }
 
 .cart-modal-row:last-child {
@@ -118,8 +119,6 @@
 
 .cart-modal-item-product-container {
   display: flex;
-  height: 11vw;
-  align-items: center;
 }
 
 .cart-modal-item-product-image {
@@ -141,17 +140,27 @@
   font-weight: 600;
 }
 
+.cart-modal-item-product-price,
+.cart-modal-item-product-color,
+.cart-modal-item-product-size {
+  margin-bottom: 0;
+}
+
 .cart-modal-item-product-price {
   font-size: 0.8vw;
   font-family: Avenir;
   color: gray;
 }
 
+.cart-modal-item-product-color,
+.cart-modal-item-product-size,
+.cart-modal-item-product-color span,
+.cart-modal-item-product-size span,
 .cart-modal-item-product-price span {
   font-size: 0.8vw;
   font-family: Avenir;
   color: gray;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .cart-modal-item-quantity-minus-btn,

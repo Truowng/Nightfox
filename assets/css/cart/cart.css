@@ -118,11 +118,21 @@
   color: gray;
 }
 
+.cart-item-product-color,
+.cart-item-product-size,
+.cart-item-product-price {
+  margin-bottom: 0.5vw;
+}
+
+.cart-item-product-color,
+.cart-item-product-size,
+.cart-item-product-color span,
+.cart-item-product-size span,
 .cart-item-product-price span {
   font-size: 1vw;
   font-family: Avenir;
   color: gray;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .cart-item-quantity-minus-btn,
