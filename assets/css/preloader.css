@@ -30,7 +30,7 @@
   text-transform: uppercase;
   font-size: 30vw;
   color: transparent;
-  -webkit-text-stroke: 0.2rem var(--pri-color);
+  -webkit-text-stroke: 0.2rem #000;
   position: relative;
   background-image: url(../img/logo.png);
   display: block;
@@ -40,7 +40,7 @@
   content: attr(data-fill-text);
   position: absolute;
   left: 0;
-  color: var(--pri-color);
+  color: #000;
   -webkit-text-stroke: 0 transparent;
   width: 0%;
   height: 100%;

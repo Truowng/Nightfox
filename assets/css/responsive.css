@@ -662,6 +662,10 @@
     padding: 3vw 0;
     margin-bottom: 4vw;
   }
+
+  .cart-subtotal-checkout-btn span {
+    display: none;
+  }
 }
 
 /* mobile  */
