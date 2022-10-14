@@ -53,6 +53,9 @@ const moveBtns = (mobileAndTabletScale) => {
     cartModalItemsContainer.classList.add("flex-col");
     cartModalContinueShoppingBtn.classList.add("move-continue-shopping-btn");
     cartModalViewBasketBtn.classList.add("move-view-basket-btn");
+  } else {
+    cartModalItemsContainer.innerHTML = `<p class="empty-basket": 10vw">Your basket is empty</p>`;
+    cartModalItemsContainer.classList.add("flex-col");
   }
 };
 
