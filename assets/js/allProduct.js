@@ -116,7 +116,7 @@ const allProducts = productInfomations.map((productInfomation) => {
 });
 productSectionContainer.innerHTML = allProducts.join("");
 
-productSectionListItems.forEach((productSectionListItem, index) => {
+productSectionListItems.forEach((productSectionListItem) => {
   const productSectionListItemText = productSectionListItem.querySelector("a");
   productSectionListItem.addEventListener("click", () => {
     document.querySelector(".active")

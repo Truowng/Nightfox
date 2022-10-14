@@ -347,6 +347,11 @@
     width: 85vw;
   }
 
+  .product-detail-material-image-text span:last-child {
+    width: 71%;
+    margin-right: 2vw;
+  }
+
   .product-detail-description-container {
     padding-right: 2vw;
   }

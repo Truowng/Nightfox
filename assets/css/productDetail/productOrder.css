@@ -54,14 +54,15 @@
 .product-detail-order-infomation-name-tag {
   font-size: 2vw;
   color: var(--pri-color);
-  font-family: "Rokkitt", serif;
+  font-family: "Arsenal", sans-serif;
 }
 
 .product-detail-order-infomation-name {
-  font-size: 2.5vw;
+  font-size: 2vw;
   margin-bottom: 2rem;
   max-width: 27vw;
-  font-family: "Rokkitt", serif;
+  font-family: "Arsenal", sans-serif;
+  text-transform: uppercase;
 }
 
 .product-detail-order-infomation-price-container {
@@ -72,7 +73,7 @@
 .product-detail-order-infomation-old-price,
 .product-detail-order-infomation-new-price {
   font-size: 1.2vw;
-  font-family: "Rokkitt", serif;
+  font-family: "Arsenal", sans-serif;
   padding: 0.5rem;
 }
 
@@ -142,7 +143,7 @@
   padding: 1rem 0;
   text-align: center;
   transition: all ease 0.3s;
-  font-family: "Rokkitt", serif;
+  font-family: "Arsenal", sans-serif;
 }
 
 .product-detail-order-infomation-size-checkbox:checked
@@ -171,7 +172,7 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  font-family: "Rokkitt", serif;
+  font-family: "Arsenal", sans-serif;
   transition: all ease 0.3s;
 }
 .product-detail-order-infomation-buy-basket {
