@@ -63,6 +63,21 @@
   height: 100%;
 }
 
+.empty-basket-link,
+.empty-basket {
+  font-size: 3vw;
+  font-family: Avenir;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.empty-basket-link {
+  font-size: 2vw;
+  text-decoration: none;
+  color: #000;
+  margin-top: 2vw;
+}
+
 .cart-modal-row-wrap::-webkit-scrollbar {
   width: 1rem;
 }
@@ -293,4 +308,23 @@
 
 .cart-modal-btn-view-basket:hover {
   color: #fff;
+}
+
+/* OTHER */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.move-continue-shopping-btn {
+  transform: rotate(0) translate(-50%, -50%);
+  top: 65%;
+  left: 50%;
+}
+
+.move-view-basket-btn {
+  right: -50%;
 }

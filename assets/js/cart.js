@@ -1,98 +1,7 @@
-const cartProductInfomations = [
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/1.1_1a57f7ef49e149a3907e7e3b5328d0ff_master.png",
-    name: "Nightfox <br /> Basics T-shirt",
-    price: 199000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03433__1__da2f9490f7f4448fb9c4dd484d63d033_master.jpg",
-    name: "Iconic<br /> Pink",
-    price: 357000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03221_fe8cb0be403e477f8f44fc4c690d1191_master.jpg",
-    name: "Orange<br /> Layer Nightfox",
-    price: 318000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03146_83f41405acb441bbb00b856c9ef7bd9c_master.jpg",
-    name: "Dashed<br /> Letters Nightfox",
-    price: 313000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03612_e9b66b1cddf64fab90663862d8f9caa2_master.jpg",
-    name: "Comfy<br /> Logo",
-    price: 339000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/1.1_1a57f7ef49e149a3907e7e3b5328d0ff_master.png",
-    name: "Nightfox<br /> Basics T-shirt",
-    price: 199000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03433__1__da2f9490f7f4448fb9c4dd484d63d033_master.jpg",
-    name: "Iconic<br /> Pink",
-    price: 357000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03221_fe8cb0be403e477f8f44fc4c690d1191_master.jpg",
-    name: "Orange<br /> Layer Nightfox",
-    price: 318000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03146_83f41405acb441bbb00b856c9ef7bd9c_master.jpg",
-    name: "Dashed<br /> Letters Nightfox",
-    price: 313000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03612_e9b66b1cddf64fab90663862d8f9caa2_master.jpg",
-    name: "Comfy<br /> Logo",
-    price: 339000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/1.1_1a57f7ef49e149a3907e7e3b5328d0ff_master.png",
-    name: "Nightfox<br /> Basics T-shirt",
-    price: 199000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03433__1__da2f9490f7f4448fb9c4dd484d63d033_master.jpg",
-    name: "Iconic<br /> Pink",
-    price: 357000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03221_fe8cb0be403e477f8f44fc4c690d1191_master.jpg",
-    name: "Orange<br /> Layer Nightfox",
-    price: 318000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03146_83f41405acb441bbb00b856c9ef7bd9c_master.jpg",
-    name: "Dashed<br /> Letters Nightfox",
-    price: 313000,
-  },
-  {
-    image:
-      "https://product.hstatic.net/200000491703/product/ann03612_e9b66b1cddf64fab90663862d8f9caa2_master.jpg",
-    name: "Comfy<br /> Logo",
-    price: 339000,
-  },
-];
-
 const cartItems = document.querySelectorAll(".cart-row");
+const cartItemsContainer = document.querySelector(".cart-row-wrap");
 const cartTable = document.querySelector(".cart-table");
+const subTotalContainer = document.querySelector(".cart-subtotal-container");
 const subTotal = document.querySelector(".cart-subtotal span");
 const cartItemQuantityMinusBtn = document.querySelector(
   ".cart-item-quantity-minus-btn"
@@ -101,9 +10,19 @@ const cartItemQuantityPlusBtn = document.querySelector(
   ".cart-item-quantity-plus-btn"
 );
 
+let cartItemCounter = 0;
+
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+const cartEmptyBasket = () => {
+  cartItemsContainer.classList.add("flex-col");
+  cartItemsContainer.style.height = "50vh";
+  subTotalContainer.style.display = "none";
+  cartItemsContainer.innerHTML = `<p class="empty-basket">your basket is empty</p>
+  <a href="allProduct.html" class="empty-basket-link">continue-shopping</a>`;
+};
 
 // CALCULATE FUNCTION
 
@@ -160,6 +79,10 @@ cartItems.forEach((cartItem) => {
     .querySelector(".cart-item-quantity-delete-btn")
     .addEventListener("click", () => {
       cartItem.remove();
+      ++cartItemCounter;
+      if (cartItemCounter == cartItems.length) {
+        cartEmptyBasket();
+      }
       cartInit();
     });
 });

@@ -563,6 +563,15 @@
     display: none;
   }
 
+  .empty-basket-link,
+  .empty-basket {
+    font-size: 8vw;
+  }
+
+  .empty-basket-link {
+    font-size: 5vw;
+  }
+
   /* CART */
 
   .cart-container {
