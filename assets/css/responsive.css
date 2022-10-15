@@ -432,6 +432,11 @@
     font-size: 5vw;
   }
 
+  .product-detail-order-infomation-buy-basket i {
+    font-size: 4vw;
+    margin-left: 0.7rem;
+  }
+
   /* CART MODAL */
 
   .cart-modal-container {
