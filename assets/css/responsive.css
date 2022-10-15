@@ -680,6 +680,42 @@
   .cart-subtotal-checkout-btn span {
     display: none;
   }
+
+  /* ABOUT */
+
+  .about {
+    height: 77vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .about-title {
+    font-size: 9vw;
+    line-height: 17vw;
+  }
+
+  .about-title span {
+    font-size: 20vw;
+    margin-left: 3vw;
+  }
+
+  .about-text {
+    font-size: 4vw;
+    margin-top: 3vh;
+  }
+
+  .about-text span {
+    font-size: 4.2vw;
+  }
+
+  .about-container::before {
+    content: none;
+  }
+
+  .about-container::after {
+    width: 75vw;
+    height: 40vh;
+  }
 }
 
 /* mobile  */
