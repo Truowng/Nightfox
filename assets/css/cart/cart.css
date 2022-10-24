@@ -229,6 +229,17 @@
   padding: 1.2vw 0;
 }
 
+.cart-form-input-message::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.cart-form-input-message::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+.cart-form-input-message::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
 .cart-form-input-name {
   margin-right: 1vw;
 }
