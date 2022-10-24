@@ -206,7 +206,50 @@
 
 .cart-subtotal-container {
   width: 30%;
-  margin-left: auto;
+}
+
+.cart-form-input-container {
+  display: flex;
+}
+
+.cart-form-input-message,
+.cart-form-input-name,
+.cart-form-input-phone {
+  width: 50%;
+  font-size: 1vw;
+  outline: none;
+  border: 0.1rem solid transparent;
+  border-bottom-color: #aaa;
+  font-weight: bold;
+  padding: 0.3rem 0;
+  font-family: Avenir;
+  letter-spacing: 0.1vw;
+  margin: 1vw 0;
+  font-weight: 100;
+  padding: 1.2vw 0;
+}
+
+.cart-form-input-name {
+  margin-right: 1vw;
+}
+
+.cart-form-input-message {
+  width: 100%;
+  resize: none;
+  margin-bottom: 0;
+  height: 7.5vw;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.cart-form-input-phone::-webkit-outer-spin-button,
+.cart-form-input-phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.cart-form-input-phone[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .cart-subtotal {
@@ -249,6 +292,10 @@
   display: block;
   text-align: center;
   border: 0.1rem solid #000;
+}
+
+.cart-subtotal-checkout-btn:hover {
+  color: #fff;
 }
 
 .cart-subtotal-checkout-btn span {

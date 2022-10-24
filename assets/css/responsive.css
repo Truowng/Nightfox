@@ -657,6 +657,30 @@
     display: none;
   }
 
+  .cart-checkout-wrap {
+    flex-direction: column;
+  }
+
+  .cart-form-container,
+  .cart-subtotal-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .cart-form-container {
+    margin-top: 2vw;
+  }
+
+  .cart-form-input-message,
+  .cart-form-input-name,
+  .cart-form-input-phone {
+    font-size: 2vw;
+  }
+
+  .cart-form-input-message {
+    height: 30vw;
+  }
+
   .cart-subtotal-container {
     width: 100%;
   }
