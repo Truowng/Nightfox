@@ -671,10 +671,16 @@
     margin-top: 2vw;
   }
 
+  .cart-form-input-container {
+    flex-direction: column;
+  }
+
   .cart-form-input-message,
   .cart-form-input-name,
   .cart-form-input-phone {
-    font-size: 2vw;
+    font-size: 3.5vw;
+    width: 100%;
+    margin: 2.5vw 0;
   }
 
   .cart-form-input-message {
