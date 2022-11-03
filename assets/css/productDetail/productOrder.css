@@ -67,7 +67,7 @@
 
 .product-detail-order-infomation-price-container {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 
 .product-detail-order-infomation-old-price,
@@ -98,9 +98,68 @@
 
 .product-detail-order-infomation-color-container {
   display: flex;
-  height: 4rem;
   align-items: center;
   margin-bottom: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-detail-order-infomation-color-label {
+  font-size: 1.2vw;
+  font-family: "Arsenal", sans-serif;
+  display: block;
+  position: relative;
+  flex: 1 1 50%;
+  margin: 0.5vw 0;
+  max-width: 50%;
+}
+
+.product-detail-order-infomation-color {
+  display: none;
+}
+
+.product-detail-order-infomation-color-checkmark {
+  position: absolute;
+  top: -15%;
+  right: 50%;
+  height: 2vw;
+  width: 2vw;
+  background-color: #fff;
+  border: 0.1rem solid #000;
+  border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.product-detail-order-infomation-color-label
+  input:checked
+  ~ .product-detail-order-infomation-color-checkmark {
+  background-color: #000;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.product-detail-order-infomation-color-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.product-detail-order-infomation-color-label
+  input:checked
+  ~ .product-detail-order-infomation-color-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.product-detail-order-infomation-color-label
+  .product-detail-order-infomation-color-checkmark:after {
+  top: 50%;
+  left: 50%;
+  width: 0.5vw;
+  height: 0.5vw;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: white;
 }
 
 .product-detail-order-infomation-color {
@@ -112,6 +171,7 @@
   margin-left: 1rem;
   border: 0.1rem solid #000;
   cursor: pointer;
+  margin-right: 0.8vw;
 }
 
 .product-detail-order-infomation-color:first-child {
